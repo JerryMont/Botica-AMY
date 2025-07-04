@@ -149,6 +149,82 @@
         .btn-success { background-color: #2ecc71; }
         .btn-warning { background-color: #f39c12; }
         .btn-danger { background-color: #e74c3c; }
+        .btn-secondary { background-color: #95a5a6; }
+        
+        .btn {
+            padding: 12px 20px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            transition: opacity 0.3s ease;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+        
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+        
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .btn-info {
+            background-color: #17a2b8;
+        }
+        
+        .reporte-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .stats-card {
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .stats-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 16px;
+        }
+        
+        .stats-card p {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -201,6 +277,16 @@
                         <li style="margin-bottom: 10px;">
                             <a href="/ventas" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
                                 💰 Ventas
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="<?php echo e(route('reportes.index')); ?>" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
+                                📊 Reportes
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <a href="<?php echo e(route('servicios.index')); ?>" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
+                                🩺 Servicios
                             </a>
                         </li>
                     </ul>

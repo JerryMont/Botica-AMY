@@ -56,17 +56,17 @@
 <div class="actions-card">
     <h2>Acciones Rápidas</h2>
     <div class="actions-buttons">
-        <a href="/reportes" class="action-btn btn-primary">
+        <a href="<?php echo e(route('reportes.index')); ?>" class="action-btn btn-primary">
             📊 Ver Reportes
         </a>
         <a href="/ventas/nueva" class="action-btn btn-success">
             💰 Nueva Venta
         </a>
-        <a href="/clientes/nuevo" class="action-btn btn-warning">
-            👥 Nuevo Cliente
+        <a href="<?php echo e(route('clientes.index')); ?>" class="action-btn btn-warning">
+            👥 Gestión de Clientes
         </a>
-        <a href="/productos/nuevo" class="action-btn btn-primary">
-            💊 Nuevo Producto
+        <a href="<?php echo e(route('productos.index')); ?>" class="action-btn btn-primary">
+            💊 Gestión de Productos
         </a>
     </div>
 </div>
