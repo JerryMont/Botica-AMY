@@ -9,6 +9,8 @@ import Ventas from './pages/Ventas';
 import Servicios from './pages/Servicios';
 import Reportes from './pages/Reportes';
 import ToastContainer from './components/UI/ToastContainer';
+import HelpButton from './components/UI/HelpButton';
+import WelcomeNotification from './components/UI/WelcomeNotification';
 
 function App() {
   return (
@@ -67,6 +69,8 @@ function App() {
             }
           />
         </Routes>
+        <HelpButton />
+        <WelcomeNotification />
       </BrowserRouter>
     </AuthProvider>
   );
