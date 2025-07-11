@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import MainLayout from '../components/Layout/MainLayout';
 import DashboardWidget from '../components/Dashboard/DashboardWidget';
 import api from '../api/axios';
 
@@ -36,7 +35,7 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <MainLayout>
+    <>
       <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Dashboard</h1>
       
       <div style={{ 
@@ -114,6 +113,6 @@ export default function Dashboard() {
           </button>
         </div>
       </div>
-    </MainLayout>
+    </>
   );
 } 

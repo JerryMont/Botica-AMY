@@ -15,29 +15,12 @@ export default function MainLayout({ children }) {
   };
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      backgroundColor: 'var(--bg-primary)',
-      display: 'flex',
-      flexDirection: 'column'
-    }}>
+    <div className="layout-container">
       <Navbar />
-      
-      <div style={{ display: 'flex', flex: 1 }}>
-        <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
-        
-        <main style={{
-          flex: 1,
-          padding: '20px',
-          backgroundColor: 'var(--bg-primary)',
-          minHeight: 'calc(100vh - 70px)',
-          transition: 'margin-left 0.3s ease'
-        }}>
-          <div className="fade-in">
-            {children}
-          </div>
-        </main>
-      </div>
+      <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
+      <main className="main-content" style={{ padding: '20px' }}>
+        {children}
+      </main>
     </div>
   );
 } 

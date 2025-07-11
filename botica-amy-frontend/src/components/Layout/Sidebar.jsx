@@ -4,27 +4,38 @@ import { useAuth } from '../../context/AuthContext';
 export default function Sidebar({ isOpen, onToggle }) {
   const { user } = useAuth();
 
-  const menuItems = [
-    { path: '/dashboard', label: '📊 Dashboard', icon: '📊' },
-    { path: '/productos', label: '💊 Productos', icon: '💊' },
-    { path: '/clientes', label: '👥 Clientes', icon: '👥' },
-    { path: '/ventas', label: '🛒 Ventas', icon: '🛒' },
-    { path: '/servicios', label: '🔧 Servicios', icon: '🔧' },
-    { path: '/reportes', label: '📈 Reportes', icon: '📈' }
+  // Menú para admin con solo icono y label limpio
+  const adminMenu = [
+    { path: '/dashboard', label: 'Dashboard', icon: '🏠' },
+    { path: '/productos', label: 'Gestión de Productos', icon: '💊' },
+    { path: '/clientes', label: 'Base de Datos de Clientes', icon: '👥' },
+    { path: '/ventas', label: 'Proceso de Ventas', icon: '🛒' },
+    { path: '/servicios', label: 'Servicios Farmacéuticos', icon: '💉' },
+    { path: '/reportes', label: 'Reportes y Análisis', icon: '📊' },
+    { path: '/admin', label: 'Administración del Sistema', icon: '⚙️' }
+  ];
+  const vendedorMenu = [
+    { path: '/productos', label: 'Gestión de Productos', icon: '💊' },
+    { path: '/clientes', label: 'Base de Datos de Clientes', icon: '👥' },
+    { path: '/ventas', label: 'Proceso de Ventas', icon: '🛒' },
+    { path: '/servicios', label: 'Servicios Farmacéuticos', icon: '💉' },
+    { path: '/reportes', label: 'Reportes y Análisis', icon: '📊' }
   ];
 
-  // Filtrar elementos según el rol del usuario
-  const filteredMenuItems = menuItems.filter(item => {
-    if (item.path === '/reportes' && user?.rol !== 'admin') {
-      return false;
-    }
-    return true;
-  });
+  // Elegir menú según rol
+  const menuItems = user?.rol === 'admin' ? adminMenu : vendedorMenu;
+
+  if (!user) return null;
+
+  const isAdmin = user.rol === 'admin';
+  
+  // Clases CSS para controlar la visibilidad
+  const sidebarClasses = `sidebar ${!isAdmin && !isOpen ? 'collapsed' : ''}`;
 
   return (
     <>
-      {/* Overlay para móviles */}
-      {isOpen && (
+      {/* Overlay para móviles solo para vendedor */}
+      {!isAdmin && isOpen && (
         <div
           onClick={onToggle}
           style={{
@@ -34,49 +45,40 @@ export default function Sidebar({ isOpen, onToggle }) {
             right: 0,
             bottom: 0,
             backgroundColor: 'rgba(0,0,0,0.5)',
-            zIndex: 998
+            zIndex: 1199
           }}
         />
       )}
 
-      <aside style={{
-        width: '250px',
-        backgroundColor: 'var(--bg-secondary)',
-        borderRight: '1px solid var(--border-color)',
-        height: 'calc(100vh - 70px)',
-        position: 'fixed',
-        left: isOpen ? 0 : '-250px',
-        top: '70px',
-        transition: 'left 0.3s ease',
-        zIndex: 999,
-        overflowY: 'auto'
-      }}>
-        <nav style={{ padding: '20px 0' }}>
+      <aside className={sidebarClasses}>
+        <nav style={{ padding: '0 0' }}>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-            {filteredMenuItems.map(item => (
-              <li key={item.path}>
+            {menuItems.map(item => (
+              <li key={item.path} style={{ marginBottom: '6px' }}>
                 <NavLink
                   to={item.path}
                   style={({ isActive }) => ({
-                    display: 'block',
-                    padding: '15px 25px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '14px',
+                    padding: '12px 22px',
                     color: isActive ? 'var(--accent-color)' : 'var(--text-primary)',
                     textDecoration: 'none',
                     borderLeft: isActive ? '4px solid var(--accent-color)' : '4px solid transparent',
-                    backgroundColor: isActive ? 'rgba(52, 152, 219, 0.1)' : 'transparent',
+                    backgroundColor: isActive ? 'rgba(52, 152, 219, 0.08)' : 'transparent',
                     transition: 'all 0.2s ease',
-                    fontSize: '14px',
-                    fontWeight: isActive ? '600' : '400'
+                    fontSize: '15px',
+                    fontWeight: isActive ? '600' : '400',
+                    borderRadius: '6px',
                   })}
                   onClick={() => {
-                    // Cerrar sidebar en móviles al hacer clic
-                    if (window.innerWidth <= 768) {
+                    if (!isAdmin && window.innerWidth <= 768) {
                       onToggle();
                     }
                   }}
                 >
-                  <span style={{ marginRight: '10px' }}>{item.icon}</span>
-                  {item.label}
+                  <span style={{ fontSize: '20px', minWidth: '24px', textAlign: 'center' }}>{item.icon}</span>
+                  <span>{item.label}</span>
                 </NavLink>
               </li>
             ))}
@@ -87,7 +89,8 @@ export default function Sidebar({ isOpen, onToggle }) {
         <div style={{
           padding: '20px',
           borderTop: '1px solid var(--border-color)',
-          marginTop: 'auto'
+          marginTop: 'auto',
+          fontSize: '13px'
         }}>
           <div style={{ color: 'var(--text-secondary)', fontSize: '12px', marginBottom: '5px' }}>
             Usuario actual
@@ -101,27 +104,29 @@ export default function Sidebar({ isOpen, onToggle }) {
         </div>
       </aside>
 
-      {/* Botón para abrir/cerrar sidebar en móviles */}
-      <button
-        onClick={onToggle}
-        style={{
-          position: 'fixed',
-          top: '80px',
-          left: '10px',
-          zIndex: 1000,
-          padding: '8px',
-          backgroundColor: 'var(--bg-secondary)',
-          border: '1px solid var(--border-color)',
-          borderRadius: '4px',
-          cursor: 'pointer',
-          display: 'none',
-          '@media (max-width: 768px)': {
-            display: 'block'
-          }
-        }}
-      >
-        {isOpen ? '✕' : '☰'}
-      </button>
+      {/* Botón para abrir/cerrar sidebar en móviles solo para vendedor */}
+      {!isAdmin && (
+        <button
+          onClick={onToggle}
+          style={{
+            position: 'fixed',
+            top: '80px',
+            left: '10px',
+            zIndex: 1201,
+            padding: '8px',
+            backgroundColor: 'var(--bg-secondary)',
+            border: '1px solid var(--border-color)',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            display: 'none',
+            '@media (max-width: 768px)': {
+              display: 'block'
+            }
+          }}
+        >
+          {isOpen ? '✕' : '☰'}
+        </button>
+      )}
     </>
   );
 } 

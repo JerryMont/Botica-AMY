@@ -4,11 +4,16 @@ import api from '../api/axios';
 const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState(null);
+  // Recuperar usuario de localStorage al iniciar
+  const [user, setUser] = useState(() => {
+    const saved = localStorage.getItem('user');
+    return saved ? JSON.parse(saved) : null;
+  });
 
   const login = async (nombre_usuario, password) => {
     const { data } = await api.post('/login', { nombre_usuario, password });
     localStorage.setItem('token', data.data.token);
+    localStorage.setItem('user', JSON.stringify(data.data.usuario));
     setUser(data.data.usuario);
     return data;
   };
@@ -16,6 +21,7 @@ export function AuthProvider({ children }) {
   const logout = async () => {
     await api.post('/logout');
     localStorage.removeItem('token');
+    localStorage.removeItem('user');
     setUser(null);
   };
 

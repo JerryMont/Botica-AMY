@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import MainLayout from '../components/Layout/MainLayout';
 import ClienteList from '../components/Clientes/ClienteList';
 import ClienteForm from '../components/Clientes/ClienteForm';
 
@@ -13,26 +12,20 @@ export default function Clientes() {
     setShowForm(true);
   };
 
-  const handleNew = () => {
-    setEditing(null);
-    setShowForm(true);
-  };
-
   const handleSuccess = () => {
-    setShowForm(false);
     setEditing(null);
+    setShowForm(false);
     setRefresh(!refresh);
   };
 
   return (
-    <MainLayout>
-      <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Gestión de Clientes</h1>
-      
-      <button 
-        onClick={handleNew}
+    <>
+      <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Base de Datos de Clientes</h1>
+      <button
+        onClick={() => setShowForm(true)}
         style={{
           padding: '12px 20px',
-          backgroundColor: '#2ecc71',
+          backgroundColor: '#3498db',
           color: 'white',
           border: 'none',
           borderRadius: '6px',
@@ -41,9 +34,8 @@ export default function Clientes() {
           marginBottom: '20px'
         }}
       >
-        ➕ Nuevo Cliente
+        👥 Nuevo Cliente
       </button>
-
       {showForm && (
         <div style={{
           backgroundColor: 'white',
@@ -52,15 +44,10 @@ export default function Clientes() {
           marginBottom: '20px',
           boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
         }}>
-          <ClienteForm
-            cliente={editing}
-            onSuccess={handleSuccess}
-            onCancel={() => setShowForm(false)}
-          />
+          <ClienteForm cliente={editing} onSuccess={handleSuccess} onCancel={() => setShowForm(false)} />
         </div>
       )}
-      
       <ClienteList key={refresh} onEdit={handleEdit} />
-    </MainLayout>
+    </>
   );
 } 

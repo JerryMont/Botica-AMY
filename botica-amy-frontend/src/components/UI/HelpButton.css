@@ -2,7 +2,7 @@
 .help-button {
   position: fixed;
   bottom: 30px;
-  left: 30px;
+  left: 280px; /* 250px del sidebar + 30px de margen */
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
@@ -13,11 +13,12 @@
   cursor: pointer;
   box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
   transition: all 0.3s ease;
-  z-index: 1000;
+  z-index: 9999; /* Muy por encima de cualquier sidebar o modal */
   display: flex;
   align-items: center;
   gap: 10px;
   animation: pulse 2s infinite;
+  pointer-events: auto;
 }
 
 .help-button:hover {
@@ -372,8 +373,8 @@
 /* Responsive */
 @media (max-width: 768px) {
   .help-button {
+    left: 20px; /* Volver a la posición original en móviles */
     bottom: 20px;
-    left: 20px;
     padding: 12px 20px;
     font-size: 14px;
   }
@@ -409,5 +410,15 @@
   
   .step-card p {
     font-size: 13px;
+  }
+}
+
+/* Asegurar visibilidad en diferentes resoluciones */
+@media (max-width: 1024px) {
+  .help-button {
+    left: 20px;
+    bottom: 20px;
+    padding: 12px 20px;
+    font-size: 14px;
   }
 } 

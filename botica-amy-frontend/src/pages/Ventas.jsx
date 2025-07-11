@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import MainLayout from '../components/Layout/MainLayout';
 import VentaList from '../components/Ventas/VentaList';
 import VentaForm from '../components/Ventas/VentaForm';
 import VentaDetalle from '../components/Ventas/VentaDetalle';
@@ -29,7 +28,7 @@ export default function Ventas() {
   };
 
   return (
-    <MainLayout>
+    <>
       <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Gestión de Ventas</h1>
       
       <button 
@@ -60,22 +59,11 @@ export default function Ventas() {
         </div>
       )}
 
-      <VentaList 
-        onViewDetail={handleDetalle} 
-        onNuevaVenta={handleNuevaVenta} 
-      />
-      
-      {detalle && (
-        <div style={{
-          backgroundColor: 'white',
-          padding: '20px',
-          borderRadius: '8px',
-          marginTop: '20px',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-        }}>
-          <VentaDetalle venta={ventaDetalle} onClose={() => setDetalle(null)} />
-        </div>
+      <VentaList key={refresh} onViewDetail={handleDetalle} onNuevaVenta={handleNuevaVenta} />
+
+      {detalle && ventaDetalle && (
+        <VentaDetalle venta={ventaDetalle} onClose={() => setDetalle(null)} />
       )}
-    </MainLayout>
+    </>
   );
 } 

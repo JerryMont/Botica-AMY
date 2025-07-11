@@ -120,3 +120,115 @@ input:focus, select:focus, textarea:focus {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+/* Sidebar fijo y scrollable */
+.sidebar {
+  height: 100vh !important;
+  overflow-y: auto !important;
+  z-index: 1200;
+  position: fixed !important;
+  left: 0 !important;
+  top: 70px !important;
+  width: 250px !important;
+  background: var(--bg-secondary) !important;
+  border-right: 1px solid var(--border-color) !important;
+  box-shadow: 2px 0 8px rgba(44,62,80,0.04) !important;
+  display: block !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  transition: left 0.3s ease !important;
+}
+
+/* Estado colapsado para vendedores en móviles */
+.sidebar.collapsed {
+  left: -250px !important;
+}
+
+/* Contenido principal ajustado para sidebar estático */
+.main-content {
+  margin-left: 250px !important;
+  width: calc(100% - 250px) !important;
+  transition: margin-left 0.3s ease;
+  position: relative;
+  z-index: 1;
+  background-color: var(--bg-primary) !important;
+  min-height: calc(100vh - 70px) !important;
+  flex: 1;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* Forzar que todos los hijos de main-content respeten el ancho y el box-sizing */
+.main-content, .main-content * {
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+  overflow-x: auto;
+}
+
+/* Asegurar que el contenido interno también respete el layout */
+.main-content > * {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Reglas específicas para páginas y componentes */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content p,
+.main-content div {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Asegurar que las tarjetas y grids respeten el ancho */
+.main-content .card,
+.main-content [style*="grid"],
+.main-content [style*="flex"] {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Contenedor principal del layout */
+.layout-container {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  background-color: var(--bg-primary) !important;
+}
+
+/* Eliminar flex de layout-content para evitar solapamiento */
+.layout-content {
+  /* display: flex !important; */
+  /* flex: 1 !important; */
+}
+
+/* Responsive: colapsar sidebar en móviles */
+@media (max-width: 768px) {
+  .sidebar {
+    left: -250px !important;
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  /* Mostrar sidebar cuando esté abierto */
+  .sidebar.open {
+    left: 0 !important;
+  }
+  
+  /* Ajustar contenido cuando sidebar esté abierto */
+  .main-content.sidebar-open {
+    margin-left: 250px !important;
+    width: calc(100% - 250px) !important;
+  }
+}
+
+/* Asegurar que el botón de ayuda esté bien posicionado */
+@media (min-width: 769px) {
+  .help-button {
+    left: 280px !important; /* 250px del sidebar + 30px de margen */
+  }
+}

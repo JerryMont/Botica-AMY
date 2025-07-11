@@ -4,6 +4,11 @@ import ThemeToggle from '../UI/ThemeToggle';
 export default function Navbar() {
   const { user, logout } = useAuth();
 
+  // Mensaje personalizado según el rol
+  let saludo = 'Usuario';
+  if (user?.rol === 'admin') saludo = 'Bienvenido administrador';
+  else if (user?.rol === 'vendedor') saludo = 'Bienvenido vendedor';
+
   return (
     <nav style={{
       backgroundColor: 'var(--bg-secondary)',
@@ -22,7 +27,7 @@ export default function Navbar() {
       
       <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
         <span style={{ color: 'var(--text-secondary)' }}>
-          👤 {user?.nombre || 'Usuario'}
+          👤 {saludo}
         </span>
         <button
           onClick={logout}

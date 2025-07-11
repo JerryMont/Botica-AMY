@@ -1,8 +1,19 @@
 import { useState } from 'react';
+import { useAuth } from '../../context/AuthContext';
+import { useLocation } from 'react-router-dom';
 import './HelpButton.css';
 
 export default function HelpButton() {
   const [isOpen, setIsOpen] = useState(false);
+  const { user } = useAuth();
+  const location = useLocation();
+  
+  // Solo mostrar en páginas autenticadas (no en login)
+  const isLoginPage = location.pathname === '/' || location.pathname === '/login';
+  
+  if (!user || isLoginPage) {
+    return null;
+  }
 
   const helpContent = [
     {

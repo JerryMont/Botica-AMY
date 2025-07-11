@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
+import MainLayout from './components/Layout/MainLayout';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Productos from './pages/Productos';
@@ -24,7 +25,9 @@ function App() {
             path="/dashboard"
             element={
               <PrivateRoute>
-                <Dashboard />
+                <MainLayout>
+                  <Dashboard />
+                </MainLayout>
               </PrivateRoute>
             }
           />
@@ -32,7 +35,9 @@ function App() {
             path="/productos"
             element={
               <PrivateRoute roles={['admin', 'vendedor']}>
-                <Productos />
+                <MainLayout>
+                  <Productos />
+                </MainLayout>
               </PrivateRoute>
             }
           />
@@ -40,7 +45,9 @@ function App() {
             path="/clientes"
             element={
               <PrivateRoute roles={['admin', 'vendedor']}>
-                <Clientes />
+                <MainLayout>
+                  <Clientes />
+                </MainLayout>
               </PrivateRoute>
             }
           />
@@ -48,7 +55,9 @@ function App() {
             path="/ventas"
             element={
               <PrivateRoute roles={['admin', 'vendedor']}>
-                <Ventas />
+                <MainLayout>
+                  <Ventas />
+                </MainLayout>
               </PrivateRoute>
             }
           />
@@ -56,7 +65,9 @@ function App() {
             path="/servicios"
             element={
               <PrivateRoute roles={['admin', 'vendedor']}>
-                <Servicios />
+                <MainLayout>
+                  <Servicios />
+                </MainLayout>
               </PrivateRoute>
             }
           />
@@ -64,7 +75,22 @@ function App() {
             path="/reportes"
             element={
               <PrivateRoute roles={['admin', 'vendedor']}>
-                <Reportes />
+                <MainLayout>
+                  <Reportes />
+                </MainLayout>
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/admin"
+            element={
+              <PrivateRoute roles={['admin']}>
+                <MainLayout>
+                  <div style={{ padding: 40 }}>
+                    <h2>Administración del Sistema</h2>
+                    <p>Aquí puedes gestionar usuarios, roles y configuraciones avanzadas.</p>
+                  </div>
+                </MainLayout>
               </PrivateRoute>
             }
           />
