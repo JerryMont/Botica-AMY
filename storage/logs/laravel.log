@@ -1578,3 +1578,4 @@
 #48 C:\\xampp\\htdocs\\Botica AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('C:\\\\xampp\\\\htdocs...')
 #49 {main}
 "} 
+[2025-07-14 20:27:25] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"vendedor"} 
