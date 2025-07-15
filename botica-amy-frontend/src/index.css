@@ -146,8 +146,8 @@ input:focus, select:focus, textarea:focus {
 
 /* Contenido principal ajustado para sidebar estático */
 .main-content {
-  margin-left: 250px !important;
-  width: calc(100% - 250px) !important;
+  width: 100% !important;
+  margin-left: 0 !important;
   transition: margin-left 0.3s ease;
   position: relative;
   z-index: 1;
@@ -156,6 +156,7 @@ input:focus, select:focus, textarea:focus {
   flex: 1;
   box-sizing: border-box !important;
   overflow-x: hidden !important;
+  padding-top: 70px !important;
 }
 
 /* Forzar que todos los hijos de main-content respeten el ancho y el box-sizing */
@@ -230,5 +231,27 @@ input:focus, select:focus, textarea:focus {
 @media (min-width: 769px) {
   .help-button {
     left: 280px !important; /* 250px del sidebar + 30px de margen */
+  }
+}
+
+.main-content.drawer-open {
+  margin-left: 250px !important;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-content.drawer-open {
+    margin-left: 0 !important;
+  }
+}
+
+.layout-container.sidebar-open {
+  margin-left: 250px !important;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .layout-container.sidebar-open {
+    margin-left: 0 !important;
   }
 }

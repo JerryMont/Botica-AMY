@@ -255,46 +255,8 @@
         
         <!-- Content Wrapper -->
         <div class="content-wrapper">
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <nav>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 10px;">
-                            <a href="/dashboard" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
-                                📊 Dashboard
-                            </a>
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <a href="/productos" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
-                                💊 Productos
-                            </a>
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <a href="/clientes" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
-                                👥 Clientes
-                            </a>
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <a href="/ventas" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
-                                💰 Ventas
-                            </a>
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <a href="{{ route('reportes.index') }}" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
-                                📊 Reportes
-                            </a>
-                        </li>
-                        <li style="margin-bottom: 10px;">
-                            <a href="{{ route('servicios.index') }}" style="text-decoration: none; color: var(--text-primary); padding: 10px; display: block; border-radius: 4px;">
-                                🩺 Servicios
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            
             <!-- Main Content -->
-            <main class="main-content">
+            <main class="main-content" style="width: 100%;">
                 <div class="fade-in">
                     @yield('content')
                 </div>

@@ -1,53 +1,134 @@
-import ServicioList from '../components/Servicios/ServicioList';
 import ServicioForm from '../components/Servicios/ServicioForm';
 import { useState } from 'react';
+import { getServicios, deleteServicio } from '../api/servicios';
+import { useEffect } from 'react';
 
 export default function Servicios() {
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState(null);
   const [refresh, setRefresh] = useState(false);
+  const [servicios, setServicios] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    getServicios()
+      .then(res => setServicios(res.data.data))
+      .finally(() => setLoading(false));
+  }, [refresh]);
 
   const handleEdit = (servicio) => {
     setEditing(servicio);
     setShowForm(true);
   };
 
+  const handleDelete = async (id) => {
+    if (window.confirm('¿Eliminar servicio?')) {
+      await deleteServicio(id);
+      setRefresh(r => !r);
+    }
+  };
+
   const handleSuccess = () => {
     setEditing(null);
     setShowForm(false);
-    setRefresh(!refresh);
+    setRefresh(r => !r);
   };
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Servicios Farmacéuticos</h1>
+      <h1 style={{ marginBottom: 24, color: '#2563eb', fontWeight: 800, fontSize: 36, letterSpacing: '-1px' }}>
+        <span style={{ verticalAlign: 'middle', marginRight: 10 }}>🩺</span>Servicios Farmacéuticos
+      </h1>
       <button
         onClick={() => setShowForm(true)}
         style={{
-          padding: '12px 20px',
-          backgroundColor: '#f39c12',
+          padding: '12px 28px',
+          background: '#f59e42',
           color: 'white',
           border: 'none',
-          borderRadius: '6px',
+          borderRadius: 8,
+          fontWeight: 600,
+          fontSize: 18,
+          boxShadow: '0 2px 8px rgba(44,62,80,0.08)',
+          marginBottom: 32,
           cursor: 'pointer',
-          fontSize: '14px',
-          marginBottom: '20px'
+          transition: 'background 0.2s',
         }}
       >
-        🔧 Nuevo Servicio
+        <span style={{ marginRight: 8 }}>🛠️</span>Nuevo Servicio
       </button>
       {showForm && (
         <div style={{
           backgroundColor: 'white',
-          padding: '20px',
-          borderRadius: '8px',
-          marginBottom: '20px',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+          padding: '24px',
+          borderRadius: '12px',
+          marginBottom: '24px',
+          boxShadow: '0 2px 8px rgba(44,62,80,0.08)',
+          maxWidth: 500,
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}>
           <ServicioForm servicio={editing} onSuccess={handleSuccess} onCancel={() => setShowForm(false)} />
         </div>
       )}
-      <ServicioList key={refresh} onEdit={handleEdit} />
+      <h2 style={{ color: '#2c3e50', fontWeight: 700, marginBottom: 18, fontSize: 26 }}>Servicios</h2>
+      {loading ? (
+        <div style={{ textAlign: 'center', color: '#888', fontSize: 18 }}>Cargando servicios...</div>
+      ) : (
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
+          {servicios.map(servicio => (
+            <div key={servicio.id} style={{
+              background: 'white',
+              borderRadius: 12,
+              boxShadow: '0 2px 8px rgba(44,62,80,0.06)',
+              padding: 24,
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 12,
+              minHeight: 120,
+              position: 'relative',
+            }}>
+              <div style={{ fontWeight: 700, color: '#2563eb', fontSize: 20, marginBottom: 4 }}>{servicio.titulo}</div>
+              <div style={{ color: '#555', fontSize: 16, flex: 1 }}>{servicio.descripcion}</div>
+              <div style={{ display: 'flex', gap: 10, marginTop: 8 }}>
+                <button
+                  style={{
+                    background: '#3498db',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: 6,
+                    padding: '8px 18px',
+                    fontWeight: 600,
+                    fontSize: 15,
+                    cursor: 'pointer',
+                    transition: 'background 0.2s',
+                  }}
+                  onClick={() => handleEdit(servicio)}
+                >
+                  Editar
+                </button>
+                <button
+                  style={{
+                    background: '#e74c3c',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: 6,
+                    padding: '8px 18px',
+                    fontWeight: 600,
+                    fontSize: 15,
+                    cursor: 'pointer',
+                    transition: 'background 0.2s',
+                  }}
+                  onClick={() => handleDelete(servicio.id)}
+                >
+                  Eliminar
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </>
   );
 } 
