@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'boticaamy/botica-amy',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '0ba5c1741f7d3b19f4899b006f74be1979c5117c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'boticaamy/botica-amy' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '0ba5c1741f7d3b19f4899b006f74be1979c5117c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
