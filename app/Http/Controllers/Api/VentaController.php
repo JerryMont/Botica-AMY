@@ -7,6 +7,7 @@ use App\Models\Venta;
 use App\Models\DetalleVenta;
 use App\Http\Requests\StoreVentaRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class VentaController extends Controller
 {
@@ -22,6 +23,7 @@ class VentaController extends Controller
 
     public function store(StoreVentaRequest $request)
     {
+        Log::info('Datos recibidos en VentaController@store', $request->all());
         $data = $request->validated();
         DB::beginTransaction();
         try {
