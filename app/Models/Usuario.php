@@ -25,6 +25,15 @@ class Usuario extends Authenticatable
         'password',
         'remember_token',
     ];
+    
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array<string, string>
+     */
+    protected $casts = [
+        'activo' => 'boolean',
+    ];
 
     // Relación: Usuario tiene muchas ventas
     public function ventas()

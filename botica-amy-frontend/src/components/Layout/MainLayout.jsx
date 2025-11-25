@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Navbar from './Navbar';
+import Footer from './Footer';
 import SidebarDrawer from './SidebarDrawer';
 import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -53,6 +54,7 @@ export default function MainLayout({ children }) {
       <main className="main-content" style={{ padding: '20px' }}>
         {children}
       </main>
+      <Footer />
     </div>
   );
-} 
+}

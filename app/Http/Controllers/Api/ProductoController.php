@@ -82,4 +82,27 @@ class ProductoController extends Controller
             'data' => null
         ]);
     }
+
+    /**
+     * Obtener productos con stock bajo
+     * GET /api/productos/stock-bajo?umbral=10
+     */
+    public function stockBajo(Request $request)
+    {
+        $umbral = $request->get('umbral', 10);
+        
+        $productos = Producto::where('stock', '<=', $umbral)
+            ->orderBy('stock', 'asc')
+            ->get();
+        
+        return response()->json([
+            'status' => true,
+            'message' => "Productos con stock menor o igual a {$umbral}",
+            'data' => $productos,
+            'meta' => [
+                'umbral' => $umbral,
+                'total' => $productos->count()
+            ]
+        ]);
+    }
 } 

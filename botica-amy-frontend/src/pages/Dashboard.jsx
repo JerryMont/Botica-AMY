@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DashboardWidget from '../components/Dashboard/DashboardWidget';
 import api from '../api/axios';
 
@@ -9,6 +10,7 @@ export default function Dashboard() {
     totalVentas: 0,
     stockBajo: 0
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchStats = async () => {
@@ -86,7 +88,7 @@ export default function Dashboard() {
             borderRadius: '6px',
             cursor: 'pointer',
             fontSize: '14px'
-          }}>
+          }} onClick={() => navigate('/reportes')}>
             📊 Ver Reportes
           </button>
           <button style={{
@@ -97,7 +99,7 @@ export default function Dashboard() {
             borderRadius: '6px',
             cursor: 'pointer',
             fontSize: '14px'
-          }}>
+          }} onClick={() => navigate('/ventas')}>
             💰 Nueva Venta
           </button>
           <button style={{
@@ -108,11 +110,11 @@ export default function Dashboard() {
             borderRadius: '6px',
             cursor: 'pointer',
             fontSize: '14px'
-          }}>
+          }} onClick={() => navigate('/clientes')}>
             👥 Nuevo Cliente
           </button>
         </div>
       </div>
     </>
   );
-} 
+}

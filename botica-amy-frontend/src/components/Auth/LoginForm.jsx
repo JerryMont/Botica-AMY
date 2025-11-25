@@ -149,9 +149,8 @@ export default function LoginForm() {
         </form>
 
         <div style={{ marginTop: '20px', textAlign: 'center', color: '#7f8c8d', fontSize: '14px' }}>
-          <p>Credenciales de prueba:</p>
-          <p><strong>Admin:</strong> admin / admin123</p>
-          <p><strong>Vendedor:</strong> vendedor / vendedor123</p>
+          <p>Si necesitas cuentas de prueba, crea usuarios mediante seeders locales o contacta al administrador.</p>
+          <p style={{ fontSize: '12px', color: '#95a5a6' }}>Nota: Las credenciales no se muestran en la interfaz por seguridad.</p>
         </div>
       </div>
     </div>

@@ -70,9 +70,8 @@
     </form>
 
     <div class="credentials-info">
-        <p>Credenciales de prueba:</p>
-        <p><strong>Admin:</strong> admin / admin123</p>
-        <p><strong>Vendedor:</strong> vendedor / vendedor123</p>
+        <p>Si necesitas cuentas de prueba, crea usuarios mediante seeders locales o contacta al administrador.</p>
+        <p class="small">Nota: Las credenciales no se muestran en la interfaz por seguridad.</p>
     </div>
 </div>
 @endsection

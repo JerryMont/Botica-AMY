@@ -62,8 +62,8 @@ API RESTful para gestión de farmacia, desarrollada en Laravel 11 (API mode) con
 ### Ejemplo de login
 ```bash
 curl -X POST http://localhost:8000/api/login \
-  -H "Content-Type: application/json" \
-  -d '{"nombre_usuario": "admin", "password": "admin123"}'
+   -H "Content-Type: application/json" \
+   -d '{"nombre_usuario": "<TU_USUARIO>", "password": "<TU_CONTRASEÑA>"}'
 ```
 Respuesta:
 ```json

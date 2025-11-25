@@ -22,12 +22,38 @@ class ClienteController extends Controller
 
     public function store(StoreClienteRequest $request)
     {
-        $cliente = Cliente::create($request->validated());
-        return response()->json([
-            'status' => true,
-            'message' => 'Cliente creado correctamente',
-            'data' => $cliente
-        ], 201);
+        try {
+            $cliente = Cliente::create($request->validated());
+            return response()->json([
+                'status' => true,
+                'message' => 'Cliente creado correctamente',
+                'data' => $cliente
+            ], 201);
+        } catch (\Illuminate\Database\QueryException $e) {
+            // Error de base de datos (ej: email duplicado)
+            $errorCode = $e->errorInfo[1] ?? null;
+            if ($errorCode == 1062) { // Duplicate entry
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Este email ya está registrado. Por favor, use otro email',
+                    'data' => null,
+                    'errors' => ['email' => ['Este email ya está registrado']]
+                ], 422);
+            }
+            return response()->json([
+                'status' => false,
+                'message' => 'Error al crear el cliente: ' . $e->getMessage(),
+                'data' => null,
+                'errors' => ['general' => [$e->getMessage()]]
+            ], 500);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error inesperado al crear el cliente',
+                'data' => null,
+                'errors' => ['general' => [$e->getMessage()]]
+            ], 500);
+        }
     }
 
     public function show($id)
@@ -49,20 +75,48 @@ class ClienteController extends Controller
 
     public function update(UpdateClienteRequest $request, $id)
     {
-        $cliente = Cliente::find($id);
-        if (!$cliente) {
+        try {
+            $cliente = Cliente::find($id);
+            if (!$cliente) {
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Cliente no encontrado',
+                    'data' => null
+                ], 404);
+            }
+            
+            $cliente->update($request->validated());
+            
+            return response()->json([
+                'status' => true,
+                'message' => 'Cliente actualizado correctamente',
+                'data' => $cliente->fresh()
+            ]);
+        } catch (\Illuminate\Database\QueryException $e) {
+            // Error de base de datos (ej: email duplicado)
+            $errorCode = $e->errorInfo[1] ?? null;
+            if ($errorCode == 1062) { // Duplicate entry
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Este email ya está registrado por otro cliente. Por favor, use otro email',
+                    'data' => null,
+                    'errors' => ['email' => ['Este email ya está registrado']]
+                ], 422);
+            }
             return response()->json([
                 'status' => false,
-                'message' => 'Cliente no encontrado',
-                'data' => null
-            ], 404);
+                'message' => 'Error al actualizar el cliente: ' . $e->getMessage(),
+                'data' => null,
+                'errors' => ['general' => [$e->getMessage()]]
+            ], 500);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Error inesperado al actualizar el cliente',
+                'data' => null,
+                'errors' => ['general' => [$e->getMessage()]]
+            ], 500);
         }
-        $cliente->update($request->validated());
-        return response()->json([
-            'status' => true,
-            'message' => 'Cliente actualizado correctamente',
-            'data' => $cliente
-        ]);
     }
 
     public function destroy($id)

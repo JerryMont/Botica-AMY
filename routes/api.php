@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\ServicioController;
 use App\Http\Controllers\Api\VentaController;
 use App\Http\Controllers\Api\MovimientoStockController;
 use App\Http\Controllers\Api\CategoriaProductoController;
+use App\Http\Controllers\Api\ReporteController;
 
 // Rutas de autenticación
 Route::post('/login', [AuthController::class, 'login']);
@@ -24,6 +25,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Productos
     Route::apiResource('productos', ProductoController::class);
+    Route::get('/productos/stock-bajo', [ProductoController::class, 'stockBajo']);
 
     // Servicios
     Route::apiResource('servicios', ServicioController::class);
@@ -36,6 +38,10 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Categorías de productos
     Route::apiResource('categorias-producto', CategoriaProductoController::class);
+
+    // Reportes
+    Route::get('/reporte/ventas', [ReporteController::class, 'ventas']);
+    Route::get('/reporte/dashboard', [ReporteController::class, 'dashboard']);
 
     // Ejemplo: solo admin puede acceder
     Route::get('/solo-admin', function () {

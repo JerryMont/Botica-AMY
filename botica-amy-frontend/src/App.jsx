@@ -11,6 +11,9 @@ import Servicios from './pages/Servicios';
 import Reportes from './pages/Reportes';
 import ToastContainer from './components/UI/ToastContainer';
 import WelcomeNotification from './components/UI/WelcomeNotification';
+import Admin from './pages/Admin';
+import ReporteVentas from './components/Reportes/ReporteVentas';
+import ReporteStock from './components/Reportes/ReporteStock';
 
 function App() {
   return (
@@ -81,14 +84,31 @@ function App() {
             }
           />
           <Route
+            path="/reportes/ventas"
+            element={
+              <PrivateRoute roles={['admin', 'vendedor']}>
+                <MainLayout>
+                  <ReporteVentas />
+                </MainLayout>
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/reportes/stock"
+            element={
+              <PrivateRoute roles={['admin', 'vendedor']}>
+                <MainLayout>
+                  <ReporteStock />
+                </MainLayout>
+              </PrivateRoute>
+            }
+          />
+          <Route
             path="/admin"
             element={
               <PrivateRoute roles={['admin']}>
                 <MainLayout>
-                  <div style={{ padding: 40 }}>
-                    <h2>Administración del Sistema</h2>
-                    <p>Aquí puedes gestionar usuarios, roles y configuraciones avanzadas.</p>
-                  </div>
+                  <Admin />
                 </MainLayout>
               </PrivateRoute>
             }
