@@ -17,7 +17,7 @@ function UsuarioFormModal({ onClose, onSuccess, usuario }) {
 
   const validate = () => {
     const errors = {};
-    if (!form.nombre_usuario.trim()) errors.nombre_usuario = 'El usuario es obligatorio.';
+    if (!form.nombre_usuario.trim()) errors.nombre_usuario = 'El usuario es obligatorio!.';
     if (!form.nombre_usuario.trim()) errors.nombre_usuario = 'El usuario es obligatorio.';
     if (!isEdit && !form.password.trim()) errors.password = 'La contraseña es obligatoria al crear.';
     if (!['admin', 'vendedor'].includes(form.rol)) errors.rol = 'Rol inválido.';
