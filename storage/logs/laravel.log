@@ -10432,3 +10432,12 @@
 [2025-11-27 00:00:23] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
 [2025-11-27 00:13:41] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
 [2025-11-27 00:13:43] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 17:51:50] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 17:51:58] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 18:02:43] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 18:04:13] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 18:43:37] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 18:47:02] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 19:34:17] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 19:52:54] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-27 19:53:00] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
