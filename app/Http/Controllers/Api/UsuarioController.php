@@ -52,10 +52,24 @@ class UsuarioController extends Controller
             } catch (QueryException $qe) {
                 DB::rollBack();
                 Log::error('Error al crear usuario (QueryException): ' . $qe->getMessage(), ['data' => $data]);
+
+                // Detección de duplicado único (nombre_usuario)
+                $sqlState = $qe->getCode();
+                $message = $qe->getMessage();
+                if ($sqlState == '23000' || str_contains($message, 'Duplicate entry')) {
+                    // Intentar extraer el campo duplicado
+                    $field = 'nombre_usuario';
+                    return response()->json([
+                        'status' => false,
+                        'message' => 'El nombre de usuario ya existe.',
+                        'errors' => [$field => ['El nombre de usuario ya está en uso.']]
+                    ], 409);
+                }
+
                 return response()->json([
                     'status' => false,
                     'message' => 'Error de base de datos al crear el usuario.',
-                    'error' => $qe->getMessage()
+                    'error' => $message
                 ], 500);
             }
 

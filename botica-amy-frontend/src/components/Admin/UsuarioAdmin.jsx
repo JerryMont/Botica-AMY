@@ -71,7 +71,7 @@ function UsuarioFormModal({ onClose, onSuccess, usuario }) {
       // Manejo detallado de errores según la respuesta del servidor
       if (err && err.response) {
         const status = err.response.status;
-        if (status === 422) {
+                if (status === 422 || status === 409) {
           const errors = err.response.data?.errors || {};
           setFieldErrors(errors);
           setError('Corrige los campos marcados.');

@@ -18,7 +18,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
 
     // Usuarios (solo admin)
-    Route::apiResource('usuarios', UsuarioController::class)->middleware('rol:admin');
+    Route::apiResource('usuarios', UsuarioController::class)->middleware(\App\Http\Middleware\RolMiddleware::class . ':admin');
 
     // Clientes
     Route::apiResource('clientes', ClienteController::class);
@@ -46,10 +46,10 @@ Route::middleware('auth:sanctum')->group(function () {
     // Ejemplo: solo admin puede acceder
     Route::get('/solo-admin', function () {
         return response()->json(['status' => true, 'message' => 'Solo admin', 'data' => null]);
-    })->middleware('rol:admin');
+    })->middleware(\App\Http\Middleware\RolMiddleware::class . ':admin');
 
     // Ejemplo: solo vendedor puede acceder
     Route::get('/solo-vendedor', function () {
         return response()->json(['status' => true, 'message' => 'Solo vendedor', 'data' => null]);
-    })->middleware('rol:vendedor');
+    })->middleware(\App\Http\Middleware\RolMiddleware::class . ':vendedor');
 }); 
