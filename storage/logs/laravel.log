@@ -10441,3 +10441,9 @@
 [2025-11-27 19:34:17] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
 [2025-11-27 19:52:54] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
 [2025-11-27 19:53:00] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2025-11-30 15:23:08] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"vendedor"} 
+[2025-11-30 15:23:20] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"vendedor"} 
+[2025-11-30 15:23:24] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"vendedor"} 
+[2025-11-30 15:24:24] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"vendedor"} 
+[2025-11-30 15:24:56] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"vendedor"} 
+[2025-11-30 15:25:00] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"vendedor"} 
