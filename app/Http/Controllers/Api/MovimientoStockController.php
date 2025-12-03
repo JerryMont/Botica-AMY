@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\MovimientoStock;
 use App\Http\Requests\StoreMovimientoStockRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Models\Producto;
 
 class MovimientoStockController extends Controller
 {
@@ -21,12 +23,41 @@ class MovimientoStockController extends Controller
 
     public function store(StoreMovimientoStockRequest $request)
     {
-        $movimiento = MovimientoStock::create($request->validated());
-        return response()->json([
-            'status' => true,
-            'message' => 'Movimiento de stock creado correctamente',
-            'data' => $movimiento
-        ], 201);
+        $data = $request->validated();
+
+        DB::beginTransaction();
+        try {
+            $movimiento = MovimientoStock::create($data);
+
+            // Actualizar stock en la tabla productos
+            $producto = Producto::find($data['id_producto']);
+            if ($producto) {
+                if ($data['tipo'] === 'entrada') {
+                    $producto->increment('stock', (int) $data['cantidad']);
+                } else {
+                    // evitar stock negativo
+                    $decrement = (int) $data['cantidad'];
+                    $nuevo = max(0, $producto->stock - $decrement);
+                    $producto->stock = $nuevo;
+                    $producto->save();
+                }
+            }
+
+            DB::commit();
+            return response()->json([
+                'status' => true,
+                'message' => 'Movimiento de stock creado correctamente',
+                'data' => $movimiento
+            ], 201);
+        } catch (\Exception $e) {
+            DB::rollBack();
+            return response()->json([
+                'status' => false,
+                'message' => 'Error al crear movimiento de stock',
+                'data' => null,
+                'error' => $e->getMessage()
+            ], 500);
+        }
     }
 
     public function show($id)

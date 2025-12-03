@@ -1,150 +1,11 @@
 import { useEffect, useState, useMemo } from 'react';
 import api from '../../api/axios';
+import ProductModal from './ProductModal';
 import SearchFilter from '../UI/SearchFilter';
 import Pagination from '../UI/Pagination';
 import { exportToPDF, exportToCSV, exportConfigs } from '../UI/ExportUtils';
 
-function ProductoFormModal({ onClose, onSuccess }) {
-  const [form, setForm] = useState({ nombre_producto: '', descripcion: '', precio: '', stock: '' });
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [fieldErrors, setFieldErrors] = useState({});
 
-  const validate = () => {
-    const errors = {};
-    if (!form.nombre_producto.trim()) {
-      errors.nombre_producto = 'El nombre es obligatorio.';
-    }
-    if (form.precio === '' || isNaN(form.precio) || Number(form.precio) < 0) {
-      errors.precio = 'El precio es obligatorio y debe ser un número mayor o igual a 0.';
-    }
-    if (form.stock === '' || isNaN(form.stock) || !Number.isInteger(Number(form.stock)) || Number(form.stock) < 0) {
-      errors.stock = 'El stock es obligatorio y debe ser un número entero mayor o igual a 0.';
-    }
-    return errors;
-  };
-
-  const handleChange = e => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-    setFieldErrors({ ...fieldErrors, [e.target.name]: undefined });
-  };
-
-  const handleSubmit = async e => {
-    e.preventDefault();
-    setError(null);
-    const errors = validate();
-    setFieldErrors(errors);
-    if (Object.keys(errors).length > 0) return;
-    setLoading(true);
-    try {
-      await api.post('/productos', {
-        nombre_producto: form.nombre_producto,
-        descripcion: form.descripcion,
-        precio: parseFloat(form.precio),
-        stock: parseInt(form.stock, 10)
-      });
-      window.showToast('Producto creado exitosamente', 'success');
-      onSuccess();
-      onClose();
-    } catch (err) {
-      setError('Ocurrió un error al guardar el producto. Revise los datos e intente nuevamente.');
-      window.showToast('Error al guardar el producto', 'error');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(44,62,80,0.18)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
-      <form onSubmit={handleSubmit} style={{ background: 'white', borderRadius: 12, boxShadow: '0 2px 12px rgba(44,62,80,0.12)', padding: 32, minWidth: 350, maxWidth: 400, display: 'flex', flexDirection: 'column', gap: 16 }}>
-        <h3 style={{ color: '#2563eb', marginBottom: 8, fontSize: 22, fontWeight: 800 }}>Nuevo Producto</h3>
-        {error && <div style={{ color: '#e74c3c', background: '#fdecea', padding: 10, borderRadius: 8, marginBottom: 8, textAlign: 'center', fontWeight: 500 }}>{error}</div>}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          <input
-            name="nombre_producto"
-            value={form.nombre_producto}
-            onChange={handleChange}
-            placeholder="Nombre del producto"
-            required
-            style={{ padding: 10, borderRadius: 6, border: '1px solid #ccc' }}
-          />
-          {fieldErrors.nombre_producto && <span style={{ color: '#e74c3c', fontSize: 13 }}>{fieldErrors.nombre_producto}</span>}
-        </div>
-        <input
-          name="descripcion"
-          value={form.descripcion}
-          onChange={handleChange}
-          placeholder="Descripción"
-          style={{ padding: 10, borderRadius: 6, border: '1px solid #ccc' }}
-        />
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          <input
-            name="precio"
-            type="number"
-            min={0}
-            step={0.01}
-            value={form.precio}
-            onChange={handleChange}
-            placeholder="Precio"
-            required
-            style={{ padding: 10, borderRadius: 6, border: '1px solid #ccc' }}
-          />
-          {fieldErrors.precio && <span style={{ color: '#e74c3c', fontSize: 13 }}>{fieldErrors.precio}</span>}
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          <input
-            name="stock"
-            type="number"
-            min={0}
-            value={form.stock}
-            onChange={handleChange}
-            placeholder="Stock"
-            required
-            style={{ padding: 10, borderRadius: 6, border: '1px solid #ccc' }}
-          />
-          {fieldErrors.stock && <span style={{ color: '#e74c3c', fontSize: 13 }}>{fieldErrors.stock}</span>}
-        </div>
-        <div style={{ display: 'flex', gap: 12, marginTop: 8 }}>
-          <button
-            type="submit"
-            disabled={loading}
-            style={{
-              padding: '10px 24px',
-              backgroundColor: '#27ae60',
-              color: 'white',
-              border: 'none',
-              borderRadius: 6,
-              fontWeight: 600,
-              fontSize: 16,
-              cursor: loading ? 'not-allowed' : 'pointer',
-              opacity: loading ? 0.7 : 1
-            }}
-          >
-            {loading ? 'Guardando...' : 'Guardar'}
-          </button>
-          <button
-            type="button"
-            onClick={onClose}
-            disabled={loading}
-            style={{
-              padding: '10px 24px',
-              backgroundColor: '#e74c3c',
-              color: 'white',
-              border: 'none',
-              borderRadius: 6,
-              fontWeight: 600,
-              fontSize: 16,
-              cursor: loading ? 'not-allowed' : 'pointer',
-              opacity: loading ? 0.7 : 1
-            }}
-          >
-            Cancelar
-          </button>
-        </div>
-      </form>
-    </div>
-  );
-}
 
 export default function ProductoList() {
   const [productos, setProductos] = useState([]);
@@ -152,7 +13,7 @@ export default function ProductoList() {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
-  const [showForm, setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState(null); // null = cerrado, { product: null } = crear, { product: p } = editar
 
   const fetchProductos = () => {
     setLoading(true);
@@ -231,7 +92,7 @@ export default function ProductoList() {
         <h2 style={{ margin: 0, color: '#2c3e50' }}>Lista de Productos</h2>
         <div style={{ display: 'flex', gap: '10px' }}>
           <button
-            onClick={() => setShowForm(true)}
+            onClick={() => setShowForm({ product: null })}
             style={{
               padding: '8px 16px',
               backgroundColor: '#3498db',
@@ -275,7 +136,7 @@ export default function ProductoList() {
           </button>
         </div>
       </div>
-      {showForm && <ProductoFormModal onClose={() => setShowForm(false)} onSuccess={fetchProductos} />}
+      {showForm !== null && <ProductModal product={showForm.product} onClose={() => setShowForm(null)} onSuccess={fetchProductos} />}
 
       <SearchFilter
         searchTerm={searchTerm}
@@ -322,6 +183,43 @@ export default function ProductoList() {
                   }}>
                     Stock: {p.stock}
                   </span>
+                </div>
+                <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+                  <button
+                    onClick={() => setShowForm({ product: p })}
+                    style={{
+                      padding: '6px 10px',
+                      backgroundColor: '#3498db',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: 6,
+                      cursor: 'pointer'
+                    }}
+                  >
+                    Editar
+                  </button>
+                  <button
+                    onClick={async () => {
+                      if (!window.confirm('¿Seguro que deseas eliminar este producto? Esta acción no se podrá deshacer.')) return;
+                      try {
+                        await api.delete(`/productos/${p.id_producto}`);
+                        window.showToast('Producto eliminado', 'success');
+                        fetchProductos();
+                      } catch (err) {
+                        window.showToast('Error al eliminar producto', 'error');
+                      }
+                    }}
+                    style={{
+                      padding: '6px 10px',
+                      backgroundColor: '#e74c3c',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: 6,
+                      cursor: 'pointer'
+                    }}
+                  >
+                    Eliminar
+                  </button>
                 </div>
               </div>
             ))}

@@ -1,0 +1,11 @@
+{
+  "status": true,
+  "message": "Producto creado correctamente",
+  "data": {
+    "nombre_producto": "Prueba Nuevo",
+    "descripcion": "Prueba crear con stock",
+    "precio": 9.99,
+    "stock": 42,
+    "id_producto": 8
+  }
+}

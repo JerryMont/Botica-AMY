@@ -24,8 +24,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('clientes', ClienteController::class);
 
     // Productos
-    Route::apiResource('productos', ProductoController::class);
+    // Ruta específica para stock-bajo debe ir antes del resource para evitar
+    // que 'stock-bajo' sea interpretado como {producto} por la ruta resource.
     Route::get('/productos/stock-bajo', [ProductoController::class, 'stockBajo']);
+    Route::apiResource('productos', ProductoController::class);
 
     // Servicios
     Route::apiResource('servicios', ServicioController::class);
