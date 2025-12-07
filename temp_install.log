@@ -1,0 +1,23 @@
+Installing dependencies from lock file
+Verifying lock file contents can be installed on current platform.
+Package operations: 3 installs, 0 updates, 5 removals
+    0 [>---------------------------]    0 [->--------------------------]
+  - Removing symfony/yaml (v7.4.1)
+  - Removing laravel/sail (v1.50.0)
+  - Removing laravel/pint (v1.26.0)
+  - Removing hamcrest/hamcrest-php (v2.1.1)
+  - Removing fakerphp/faker (v1.24.1)
+  - Installing nette/schema (v1.3.3): Extracting archive
+  - Installing dflydev/dot-access-data (v3.0.3): Extracting archive
+  - Installing league/config (v1.2.0): Extracting archive
+    0 [>---------------------------]    0 [->--------------------------]
+Generating autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+  [37;44m INFO [39;49m Discovering packages.  
+
+  nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+
+52 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
