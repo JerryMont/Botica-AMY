@@ -41,7 +41,13 @@ export default function Dashboard() {
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Dashboard</h1>
+      <h1 style={{ 
+        marginBottom: '30px', 
+        color: colors.textHeading,
+        fontWeight: '700',
+        fontSize: '28px',
+        letterSpacing: '-0.5px'
+      }}>Dashboard</h1>
       
       <div style={{ 
         display: 'grid', 

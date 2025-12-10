@@ -5,7 +5,13 @@ export default function Productos() {
   const colors = getThemeColors();
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Gestión de Productos</h1>
+      <h1 style={{ 
+        marginBottom: '30px', 
+        color: colors.textHeading,
+        fontWeight: '700',
+        fontSize: '28px',
+        letterSpacing: '-0.5px'
+      }}>Gestión de Productos</h1>
       <ProductoList />
     </>
   );

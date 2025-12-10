@@ -99,8 +99,8 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
             onClick={onNuevaVenta}
             style={{
               padding: '8px 16px',
-              backgroundColor: '#3498db',
-              color: 'white',
+              backgroundColor: colors.accentColor,
+              color: colors.buttonTextColor,
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer',
@@ -113,8 +113,8 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
             onClick={handleExport}
             style={{
               padding: '8px 16px',
-              backgroundColor: '#27ae60',
-              color: 'white',
+              backgroundColor: colors.successColor,
+              color: colors.buttonTextColor,
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer',
@@ -151,7 +151,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                 border: `1px solid ${colors.borderColor}`,
                 borderRadius: '6px',
                 padding: '15px',
-                backgroundColor: colors.bgSecondary
+                backgroundColor: colors.cardBgAlt
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
                   <h3 style={{ margin: 0, color: colors.textPrimary }}>Venta #{v.id_venta}</h3>
@@ -160,9 +160,9 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                     borderRadius: '4px',
                     fontSize: '12px',
                     fontWeight: 'bold',
-                    backgroundColor: v.estado === 'completada' ? '#27ae60' : 
-                                   v.estado === 'pendiente' ? '#f39c12' : '#e74c3c',
-                    color: 'white'
+                    backgroundColor: v.estado === 'completada' ? colors.successColor : 
+                                   v.estado === 'pendiente' ? colors.warningColor : colors.errorColor,
+                    color: colors.buttonTextColor
                   }}>
                     {v.estado}
                   </span>
@@ -177,7 +177,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
                   <span style={{ 
                     fontWeight: 'bold', 
-                    color: '#27ae60',
+                    color: colors.successColor,
                     fontSize: '16px'
                   }}>
                     S/ {v.total}
@@ -186,8 +186,8 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                     onClick={() => onViewDetail(v)}
                     style={{
                       padding: '6px 12px',
-                      backgroundColor: '#3498db',
-                      color: 'white',
+                      backgroundColor: colors.accentColor,
+                      color: colors.buttonTextColor,
                       border: 'none',
                       borderRadius: '4px',
                       cursor: 'pointer',

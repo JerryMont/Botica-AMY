@@ -22,13 +22,19 @@ export default function Clientes() {
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Base de Datos de Clientes</h1>
+      <h1 style={{ 
+        marginBottom: '30px', 
+        color: colors.textHeading,
+        fontWeight: '700',
+        fontSize: '28px',
+        letterSpacing: '-0.5px'
+      }}>Base de Datos de Clientes</h1>
       <button
         onClick={() => setShowForm(true)}
         style={{
           padding: '12px 20px',
-          backgroundColor: '#3498db',
-          color: 'white',
+          backgroundColor: colors.accentColor,
+          color: colors.buttonTextColor,
           border: 'none',
           borderRadius: '6px',
           cursor: 'pointer',

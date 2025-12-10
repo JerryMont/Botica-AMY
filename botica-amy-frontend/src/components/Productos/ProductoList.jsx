@@ -92,13 +92,13 @@ export default function ProductoList() {
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
         <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Productos</h2>
-        <div style={{ display: 'flex', gap: '10px' }}>
+          <div style={{ display: 'flex', gap: '10px' }}>
           <button
             onClick={() => setShowForm({ product: null })}
             style={{
               padding: '8px 16px',
-              backgroundColor: '#3498db',
-              color: 'white',
+              backgroundColor: colors.accentColor,
+              color: colors.buttonTextColor,
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer',
@@ -112,8 +112,8 @@ export default function ProductoList() {
             onClick={() => handleExport('csv')}
             style={{
               padding: '8px 16px',
-              backgroundColor: '#27ae60',
-              color: 'white',
+              backgroundColor: colors.successColor,
+              color: colors.buttonTextColor,
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer',
@@ -126,8 +126,8 @@ export default function ProductoList() {
             onClick={() => handleExport('pdf')}
             style={{
               padding: '8px 16px',
-              backgroundColor: '#e74c3c',
-              color: 'white',
+              backgroundColor: colors.errorColor,
+              color: colors.buttonTextColor,
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer',
@@ -165,7 +165,7 @@ export default function ProductoList() {
                 border: `1px solid ${colors.borderColor}`,
                 borderRadius: '6px',
                 padding: '15px',
-                backgroundColor: colors.bgSecondary
+                backgroundColor: colors.cardBgAlt
               }}>
                 <h3 style={{ margin: '0 0 10px 0', color: colors.textPrimary }}>{p.nombre_producto}</h3>
                 <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
@@ -174,13 +174,13 @@ export default function ProductoList() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
                   <span style={{ 
                     fontWeight: 'bold', 
-                    color: '#27ae60',
+                    color: colors.successColor,
                     fontSize: '16px'
                   }}>
                     S/ {p.precio}
                   </span>
                   <span style={{ 
-                    color: p.stock <= 10 ? '#e74c3c' : '#2ecc71',
+                    color: p.stock <= 10 ? colors.errorColor : colors.successColor,
                     fontWeight: 'bold'
                   }}>
                     Stock: {p.stock}
@@ -191,8 +191,8 @@ export default function ProductoList() {
                     onClick={() => setShowForm({ product: p })}
                     style={{
                       padding: '6px 10px',
-                      backgroundColor: '#3498db',
-                      color: 'white',
+                      backgroundColor: colors.accentColor,
+                      color: colors.buttonTextColor,
                       border: 'none',
                       borderRadius: 6,
                       cursor: 'pointer'
@@ -213,8 +213,8 @@ export default function ProductoList() {
                     }}
                     style={{
                       padding: '6px 10px',
-                      backgroundColor: '#e74c3c',
-                      color: 'white',
+                      backgroundColor: colors.errorColor,
+                      color: colors.buttonTextColor,
                       border: 'none',
                       borderRadius: 6,
                       cursor: 'pointer'

@@ -3,7 +3,7 @@
         'name' => 'boticaamy/botica-amy',
         'pretty_version' => 'dev-rama-1',
         'version' => 'dev-rama-1',
-        'reference' => '5858c0b43ced58949ad306f2fa39bf04810c9f97',
+        'reference' => 'ece46281b534fa65e9aec52b8aa277d1c8353593',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'boticaamy/botica-amy' => array(
             'pretty_version' => 'dev-rama-1',
             'version' => 'dev-rama-1',
-            'reference' => '5858c0b43ced58949ad306f2fa39bf04810c9f97',
+            'reference' => 'ece46281b534fa65e9aec52b8aa277d1c8353593',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
