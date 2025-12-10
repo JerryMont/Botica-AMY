@@ -31,14 +31,20 @@ export default function Ventas() {
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Gestión de Ventas</h1>
+      <h1 style={{ 
+        marginBottom: '30px', 
+        color: colors.textHeading,
+        fontWeight: '700',
+        fontSize: '28px',
+        letterSpacing: '-0.5px'
+      }}>Gestión de Ventas</h1>
       
       <button 
         onClick={handleNuevaVenta}
         style={{
           padding: '12px 20px',
-          backgroundColor: '#2ecc71',
-          color: 'white',
+          backgroundColor: colors.successColor,
+          color: colors.buttonTextColor,
           border: 'none',
           borderRadius: '6px',
           cursor: 'pointer',
