@@ -1,8 +1,21 @@
 import { useAuth } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import ThemeToggle from '../UI/ThemeToggle';
 
 export default function Navbar() {
   const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate('/login');
+    } catch (error) {
+      console.error('Error durante logout:', error);
+      // Aún así navegar a login
+      navigate('/login');
+    }
+  };
 
   // Mensaje personalizado según el rol
   let saludo = 'Usuario';
@@ -30,7 +43,7 @@ export default function Navbar() {
           👤 {saludo}
         </span>
         <button
-          onClick={logout}
+          onClick={handleLogout}
           style={{
             padding: '8px 16px',
             backgroundColor: '#e74c3c',

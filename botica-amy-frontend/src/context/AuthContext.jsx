@@ -19,10 +19,18 @@ export function AuthProvider({ children }) {
   };
 
   const logout = async () => {
-    await api.post('/logout');
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    setUser(null);
+    try {
+      const response = await api.post('/logout');
+      console.log('Logout exitoso:', response.data);
+    } catch (error) {
+      console.error('Error al hacer logout en el servidor:', error.response?.data || error.message);
+      // Aún así limpiar el storage local incluso si falla la API
+    } finally {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      setUser(null);
+      console.log('Sesión cerrada localmente');
+    }
   };
 
   return (

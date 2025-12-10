@@ -11,12 +11,11 @@ use App\Http\Controllers\Api\MovimientoStockController;
 use App\Http\Controllers\Api\CategoriaProductoController;
 use App\Http\Controllers\Api\ReporteController;
 
-// Rutas de autenticación
+// Rutas de autenticación (públicas)
 Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout']); // Logout sin requerir autenticación para evitar problemas
 
 Route::middleware([\App\Http\Middleware\HandleSanctumToken::class, \App\Http\Middleware\AuthenticateUser::class])->group(function () {
-    Route::post('/logout', [AuthController::class, 'logout']);
-
     // Usuarios (solo admin)
     Route::apiResource('usuarios', UsuarioController::class)->middleware(\App\Http\Middleware\RolMiddleware::class . ':admin');
 

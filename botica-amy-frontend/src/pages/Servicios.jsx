@@ -2,6 +2,7 @@ import ServicioForm from '../components/Servicios/ServicioForm';
 import { useState } from 'react';
 import { getServicios, deleteServicio } from '../api/servicios';
 import { useEffect } from 'react';
+import { getThemeColors } from '../hooks/useDarkMode';
 
 export default function Servicios() {
   const [showForm, setShowForm] = useState(false);
@@ -9,6 +10,7 @@ export default function Servicios() {
   const [refresh, setRefresh] = useState(false);
   const [servicios, setServicios] = useState([]);
   const [loading, setLoading] = useState(true);
+  const colors = getThemeColors();
 
   useEffect(() => {
     setLoading(true);
@@ -37,7 +39,7 @@ export default function Servicios() {
 
   return (
     <>
-      <h1 style={{ marginBottom: 24, color: '#2563eb', fontWeight: 800, fontSize: 36, letterSpacing: '-1px' }}>
+      <h1 style={{ marginBottom: 24, color: colors.textPrimary, fontWeight: 800, fontSize: 36, letterSpacing: '-1px' }}>
         <span style={{ verticalAlign: 'middle', marginRight: 10 }}>🩺</span>Servicios Farmacéuticos
       </h1>
       <button
@@ -60,11 +62,11 @@ export default function Servicios() {
       </button>
       {showForm && (
         <div style={{
-          backgroundColor: 'white',
+          backgroundColor: colors.cardBg,
           padding: '24px',
           borderRadius: '12px',
           marginBottom: '24px',
-          boxShadow: '0 2px 8px rgba(44,62,80,0.08)',
+          boxShadow: `0 2px 8px ${colors.shadowColor}`,
           maxWidth: 500,
           marginLeft: 'auto',
           marginRight: 'auto',
@@ -72,16 +74,16 @@ export default function Servicios() {
           <ServicioForm servicio={editing} onSuccess={handleSuccess} onCancel={() => setShowForm(false)} />
         </div>
       )}
-      <h2 style={{ color: '#2c3e50', fontWeight: 700, marginBottom: 18, fontSize: 26 }}>Servicios</h2>
+      <h2 style={{ color: colors.textPrimary, fontWeight: 700, marginBottom: 18, fontSize: 26 }}>Servicios</h2>
       {loading ? (
-        <div style={{ textAlign: 'center', color: '#888', fontSize: 18 }}>Cargando servicios...</div>
+        <div style={{ textAlign: 'center', color: colors.textSecondary, fontSize: 18 }}>Cargando servicios...</div>
       ) : (
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
           {servicios.map(servicio => (
             <div key={servicio.id} style={{
-              background: 'white',
+              background: colors.cardBg,
               borderRadius: 12,
-              boxShadow: '0 2px 8px rgba(44,62,80,0.06)',
+              boxShadow: `0 2px 8px ${colors.shadowColor}`,
               padding: 24,
               display: 'flex',
               flexDirection: 'column',
@@ -90,7 +92,7 @@ export default function Servicios() {
               position: 'relative',
             }}>
               <div style={{ fontWeight: 700, color: '#2563eb', fontSize: 20, marginBottom: 4 }}>{servicio.titulo}</div>
-              <div style={{ color: '#555', fontSize: 16, flex: 1 }}>{servicio.descripcion}</div>
+              <div style={{ color: colors.textSecondary, fontSize: 16, flex: 1 }}>{servicio.descripcion}</div>
               <div style={{ display: 'flex', gap: 10, marginTop: 8 }}>
                 <button
                   style={{

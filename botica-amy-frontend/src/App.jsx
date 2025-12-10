@@ -14,6 +14,7 @@ import WelcomeNotification from './components/UI/WelcomeNotification';
 import Admin from './pages/Admin';
 import ReporteVentas from './components/Reportes/ReporteVentas';
 import ReporteStock from './components/Reportes/ReporteStock';
+import './components/UI/DarkModeStyles.css';
 
 function App() {
   return (

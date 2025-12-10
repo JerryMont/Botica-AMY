@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { getReporteVentas } from '../../api/reportes';
+import { getThemeColors } from '../../hooks/useDarkMode';
 
 export default function ReporteVentas() {
   const [fecha_inicio, setFechaInicio] = useState('');
   const [fecha_fin, setFechaFin] = useState('');
   const [reporte, setReporte] = useState(null);
   const [loading, setLoading] = useState(false);
+  const colors = getThemeColors();
 
   const formatCurrency = (n) => new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN' }).format(Number(n || 0));
 
@@ -25,22 +27,24 @@ export default function ReporteVentas() {
   return (
     <div>
       <div style={{
-        backgroundColor: 'white',
+        backgroundColor: colors.cardBg,
         borderRadius: 12,
-        boxShadow: '0 6px 16px rgba(0,0,0,0.08)',
+        boxShadow: `0 6px 16px ${colors.shadowColor}`,
         padding: 24,
-        marginBottom: 24
+        marginBottom: 24,
+        border: `1px solid ${colors.borderColor}`,
+        color: colors.textPrimary
       }}>
-        <h2 style={{ margin: 0, color: '#2c3e50' }}>Reporte de Ventas</h2>
-        <p style={{ color: '#7f8c8d' }}>Genera un reporte por rango de fechas.</p>
+        <h2 style={{ margin: 0, color: colors.textPrimary }}>Reporte de Ventas</h2>
+        <p style={{ color: colors.textSecondary }}>Genera un reporte por rango de fechas.</p>
         <form onSubmit={handleSubmit} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12, alignItems: 'end' }}>
           <div>
-            <label style={{ display: 'block', color: '#2c3e50', marginBottom: 6 }}>Fecha inicio</label>
-            <input type="date" value={fecha_inicio} onChange={e => setFechaInicio(e.target.value)} required style={{ width: '100%', padding: 10, border: '1px solid #ddd', borderRadius: 6 }} />
+            <label style={{ display: 'block', color: colors.textPrimary, marginBottom: 6 }}>Fecha inicio</label>
+            <input type="date" value={fecha_inicio} onChange={e => setFechaInicio(e.target.value)} required style={{ width: '100%', padding: 10, border: `1px solid ${colors.borderColor}`, borderRadius: 6, backgroundColor: colors.inputBg, color: colors.textPrimary }} />
           </div>
           <div>
-            <label style={{ display: 'block', color: '#2c3e50', marginBottom: 6 }}>Fecha fin</label>
-            <input type="date" value={fecha_fin} onChange={e => setFechaFin(e.target.value)} required style={{ width: '100%', padding: 10, border: '1px solid #ddd', borderRadius: 6 }} />
+            <label style={{ display: 'block', color: colors.textPrimary, marginBottom: 6 }}>Fecha fin</label>
+            <input type="date" value={fecha_fin} onChange={e => setFechaFin(e.target.value)} required style={{ width: '100%', padding: 10, border: `1px solid ${colors.borderColor}`, borderRadius: 6, backgroundColor: colors.inputBg, color: colors.textPrimary }} />
           </div>
           <button type="submit" disabled={loading} style={{
             padding: '12px 18px',
@@ -82,26 +86,26 @@ export default function ReporteVentas() {
             </div>
           </div>
 
-          <div style={{ backgroundColor: 'white', borderRadius: 12, boxShadow: '0 6px 16px rgba(0,0,0,0.06)', overflow: 'hidden' }}>
-            <div style={{ padding: 16, borderBottom: '1px solid #eee', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <h3 style={{ margin: 0, color: '#2c3e50' }}>Detalle por Producto</h3>
-              <span style={{ color: '#7f8c8d', fontSize: 13 }}>Período: {reporte.fecha_inicio} — {reporte.fecha_fin}</span>
+          <div style={{ backgroundColor: colors.cardBg, borderRadius: 12, boxShadow: `0 6px 16px ${colors.shadowColor}`, overflow: 'hidden' }}>
+            <div style={{ padding: 16, borderBottom: `1px solid ${colors.borderColor}`, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <h3 style={{ margin: 0, color: colors.textPrimary }}>Detalle por Producto</h3>
+              <span style={{ color: colors.textSecondary, fontSize: 13 }}>Período: {reporte.fecha_inicio} — {reporte.fecha_fin}</span>
             </div>
             <div style={{ overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
-                  <tr style={{ backgroundColor: '#f7f9fc', color: '#2c3e50' }}>
-                    <th style={{ textAlign: 'left', padding: 12, borderBottom: '1px solid #eee' }}>Producto</th>
-                    <th style={{ textAlign: 'right', padding: 12, borderBottom: '1px solid #eee' }}>Cantidad vendida</th>
-                    <th style={{ textAlign: 'right', padding: 12, borderBottom: '1px solid #eee' }}>Monto total</th>
+                  <tr style={{ backgroundColor: colors.bgSecondary, color: colors.textPrimary }}>
+                    <th style={{ textAlign: 'left', padding: 12, borderBottom: `1px solid ${colors.borderColor}` }}>Producto</th>
+                    <th style={{ textAlign: 'right', padding: 12, borderBottom: `1px solid ${colors.borderColor}` }}>Cantidad vendida</th>
+                    <th style={{ textAlign: 'right', padding: 12, borderBottom: `1px solid ${colors.borderColor}` }}>Monto total</th>
                   </tr>
                 </thead>
                 <tbody>
                   {reporte.detalle_por_producto?.map((d) => (
-                    <tr key={d.id_producto}>
-                      <td style={{ padding: 12, borderBottom: '1px solid #f0f0f0' }}>{d.nombre_producto}</td>
-                      <td style={{ padding: 12, borderBottom: '1px solid #f0f0f0', textAlign: 'right', fontWeight: 600 }}>{d.total_cantidad}</td>
-                      <td style={{ padding: 12, borderBottom: '1px solid #f0f0f0', textAlign: 'right', fontWeight: 600 }}>{formatCurrency(d.total_monto)}</td>
+                    <tr key={d.id_producto} style={{ borderBottom: `1px solid ${colors.borderColor}` }}>
+                      <td style={{ padding: 12, color: colors.textPrimary }}>{d.nombre_producto}</td>
+                      <td style={{ padding: 12, textAlign: 'right', fontWeight: 600, color: colors.textPrimary }}>{d.total_cantidad}</td>
+                      <td style={{ padding: 12, textAlign: 'right', fontWeight: 600, color: colors.textPrimary }}>{formatCurrency(d.total_monto)}</td>
                     </tr>
                   ))}
                 </tbody>

@@ -3,6 +3,7 @@ import { getClientes, deleteCliente } from '../../api/clientes';
 import api from '../../api/axios';
 import SearchFilter from '../UI/SearchFilter';
 import Pagination from '../UI/Pagination';
+import { getThemeColors } from '../../hooks/useDarkMode';
 
 export default function ClienteList({ onEdit }) {
   const [clientes, setClientes] = useState([]);
@@ -10,6 +11,7 @@ export default function ClienteList({ onEdit }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(8);
+  const colors = getThemeColors();
 
   const fetchClientes = () => {
     getClientes()
@@ -88,7 +90,7 @@ export default function ClienteList({ onEdit }) {
 
   if (loading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div style={{ textAlign: 'center', padding: '40px', color: colors.textPrimary }}>
         <p>Cargando clientes...</p>
       </div>
     );
@@ -96,13 +98,13 @@ export default function ClienteList({ onEdit }) {
 
   return (
     <div style={{
-      backgroundColor: 'white',
+      backgroundColor: colors.cardBg,
       borderRadius: '8px',
       padding: '20px',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+      boxShadow: `0 2px 4px ${colors.shadowColor}`
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0, color: '#2c3e50' }}>Lista de Clientes</h2>
+        <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Clientes</h2>
         <button
           onClick={handleExport}
           style={{
@@ -129,7 +131,7 @@ export default function ClienteList({ onEdit }) {
       />
       
       {filteredClientes.length === 0 ? (
-        <p style={{ textAlign: 'center', color: '#7f8c8d' }}>
+        <p style={{ textAlign: 'center', color: colors.textSecondary }}>
           {searchTerm ? 'No se encontraron clientes con esa búsqueda' : 'No hay clientes registrados'}
         </p>
       ) : (
@@ -141,22 +143,22 @@ export default function ClienteList({ onEdit }) {
           }}>
             {paginatedClientes.map(c => (
               <div key={c.id_cliente} style={{
-                border: '1px solid #e1e8ed',
+                border: `1px solid ${colors.borderColor}`,
                 borderRadius: '6px',
                 padding: '15px',
-                backgroundColor: '#f8f9fa'
+                backgroundColor: colors.bgSecondary
               }}>
-                <h3 style={{ margin: '0 0 10px 0', color: '#2c3e50' }}>{c.nombre}</h3>
-                <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
+                <h3 style={{ margin: '0 0 10px 0', color: colors.textPrimary }}>{c.nombre}</h3>
+                <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
                   📧 {c.email}
                 </p>
                 {c.telefono && (
-                  <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
+                  <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
                     📞 {c.telefono}
                   </p>
                 )}
                 {c.direccion && (
-                  <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
+                  <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
                     📍 {c.direccion}
                   </p>
                 )}

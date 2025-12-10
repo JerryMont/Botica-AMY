@@ -4,6 +4,7 @@ import ProductModal from './ProductModal';
 import SearchFilter from '../UI/SearchFilter';
 import Pagination from '../UI/Pagination';
 import { exportToPDF, exportToCSV, exportConfigs } from '../UI/ExportUtils';
+import { getThemeColors } from '../../hooks/useDarkMode';
 
 
 
@@ -14,6 +15,7 @@ export default function ProductoList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
   const [showForm, setShowForm] = useState(null); // null = cerrado, { product: null } = crear, { product: p } = editar
+  const colors = getThemeColors();
 
   const fetchProductos = () => {
     setLoading(true);
@@ -75,7 +77,7 @@ export default function ProductoList() {
 
   if (loading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div style={{ textAlign: 'center', padding: '40px', color: colors.textPrimary }}>
         <p>Cargando productos...</p>
       </div>
     );
@@ -83,13 +85,13 @@ export default function ProductoList() {
 
   return (
     <div style={{
-      backgroundColor: 'white',
+      backgroundColor: colors.cardBg,
       borderRadius: '8px',
       padding: '20px',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+      boxShadow: `0 2px 4px ${colors.shadowColor}`
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0, color: '#2c3e50' }}>Lista de Productos</h2>
+        <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Productos</h2>
         <div style={{ display: 'flex', gap: '10px' }}>
           <button
             onClick={() => setShowForm({ product: null })}
@@ -148,7 +150,7 @@ export default function ProductoList() {
       />
       
       {filteredProductos.length === 0 ? (
-        <p style={{ textAlign: 'center', color: '#7f8c8d' }}>
+        <p style={{ textAlign: 'center', color: colors.textSecondary }}>
           {searchTerm ? 'No se encontraron productos con esa búsqueda' : 'No hay productos registrados'}
         </p>
       ) : (
@@ -160,13 +162,13 @@ export default function ProductoList() {
           }}>
             {paginatedProductos.map(p => (
               <div key={p.id_producto} style={{
-                border: '1px solid #e1e8ed',
+                border: `1px solid ${colors.borderColor}`,
                 borderRadius: '6px',
                 padding: '15px',
-                backgroundColor: '#f8f9fa'
+                backgroundColor: colors.bgSecondary
               }}>
-                <h3 style={{ margin: '0 0 10px 0', color: '#2c3e50' }}>{p.nombre_producto}</h3>
-                <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
+                <h3 style={{ margin: '0 0 10px 0', color: colors.textPrimary }}>{p.nombre_producto}</h3>
+                <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
                   {p.descripcion || 'Sin descripción'}
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>

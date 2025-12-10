@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import api from '../../api/axios';
 import SearchFilter from '../UI/SearchFilter';
 import Pagination from '../UI/Pagination';
+import { getThemeColors } from '../../hooks/useDarkMode';
 
 export default function VentaList({ onViewDetail, onNuevaVenta }) {
   const [ventas, setVentas] = useState([]);
@@ -9,6 +10,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
+  const colors = getThemeColors();
 
   useEffect(() => {
     api.get('/ventas')
@@ -77,7 +79,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
 
   if (loading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div style={{ textAlign: 'center', padding: '40px', color: colors.textPrimary }}>
         <p>Cargando ventas...</p>
       </div>
     );
@@ -85,13 +87,13 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
 
   return (
     <div style={{
-      backgroundColor: 'white',
+      backgroundColor: colors.cardBg,
       borderRadius: '8px',
       padding: '20px',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+      boxShadow: `0 2px 4px ${colors.shadowColor}`
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0, color: '#2c3e50' }}>Lista de Ventas</h2>
+        <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Ventas</h2>
         <div style={{ display: 'flex', gap: '10px' }}>
           <button
             onClick={onNuevaVenta}
@@ -134,7 +136,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
       />
       
       {filteredVentas.length === 0 ? (
-        <p style={{ textAlign: 'center', color: '#7f8c8d' }}>
+        <p style={{ textAlign: 'center', color: colors.textSecondary }}>
           {searchTerm ? 'No se encontraron ventas con esa búsqueda' : 'No hay ventas registradas'}
         </p>
       ) : (
@@ -146,13 +148,13 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
           }}>
             {paginatedVentas.map(v => (
               <div key={v.id_venta} style={{
-                border: '1px solid #e1e8ed',
+                border: `1px solid ${colors.borderColor}`,
                 borderRadius: '6px',
                 padding: '15px',
-                backgroundColor: '#f8f9fa'
+                backgroundColor: colors.bgSecondary
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                  <h3 style={{ margin: 0, color: '#2c3e50' }}>Venta #{v.id_venta}</h3>
+                  <h3 style={{ margin: 0, color: colors.textPrimary }}>Venta #{v.id_venta}</h3>
                   <span style={{
                     padding: '4px 8px',
                     borderRadius: '4px',
@@ -166,10 +168,10 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                   </span>
                 </div>
                 
-                <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
+                <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
                   👤 {v.cliente?.nombre || 'Cliente no encontrado'}
                 </p>
-                <p style={{ margin: '5px 0', color: '#7f8c8d', fontSize: '14px' }}>
+                <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
                   📅 {new Date(v.fecha_venta).toLocaleDateString()}
                 </p>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>

@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import ClienteList from '../components/Clientes/ClienteList';
 import ClienteForm from '../components/Clientes/ClienteForm';
+import { getThemeColors } from '../hooks/useDarkMode';
 
 export default function Clientes() {
   const [editing, setEditing] = useState(null);
   const [showForm, setShowForm] = useState(false);
   const [refresh, setRefresh] = useState(false);
+  const colors = getThemeColors();
 
   const handleEdit = (cliente) => {
     setEditing(cliente);
@@ -20,7 +22,7 @@ export default function Clientes() {
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Base de Datos de Clientes</h1>
+      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Base de Datos de Clientes</h1>
       <button
         onClick={() => setShowForm(true)}
         style={{
@@ -38,11 +40,11 @@ export default function Clientes() {
       </button>
       {showForm && (
         <div style={{
-          backgroundColor: 'white',
+          backgroundColor: colors.cardBg,
           padding: '20px',
           borderRadius: '8px',
           marginBottom: '20px',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+          boxShadow: `0 2px 4px ${colors.shadowColor}`
         }}>
           <ClienteForm cliente={editing} onSuccess={handleSuccess} onCancel={() => setShowForm(false)} />
         </div>

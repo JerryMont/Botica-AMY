@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom';
+import { getThemeColors } from '../../hooks/useDarkMode';
 
 export default function ReporteList() {
   const navigate = useNavigate();
+  const colors = getThemeColors();
   return (
     <div style={{
       display: 'grid',
@@ -84,17 +86,18 @@ export default function ReporteList() {
         </button>
       </div>
       <div style={{
-        backgroundColor: 'white',
+        backgroundColor: colors.cardBg,
         borderRadius: '8px',
         padding: '25px',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        boxShadow: `0 2px 4px ${colors.shadowColor}`,
+        border: `1px solid ${colors.borderColor}`,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
-        <h3 style={{ color: '#2c3e50' }}>Dashboard de Indicadores</h3>
-        <p style={{ color: '#7f8c8d', marginBottom: 20 }}>Accede a estadísticas generales y gráficas del sistema.</p>
+        <h3 style={{ color: colors.textPrimary }}>Dashboard de Indicadores</h3>
+        <p style={{ color: colors.textSecondary, marginBottom: 20 }}>Accede a estadísticas generales y gráficas del sistema.</p>
         <button
           style={{
             padding: '10px 20px',

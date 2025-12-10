@@ -51,11 +51,28 @@ class AuthController extends Controller
     // POST /api/logout
     public function logout(Request $request)
     {
-        $request->user()->currentAccessToken()->delete();
-        return response()->json([
-            'status' => true,
-            'message' => 'Logout exitoso',
-            'data' => null
-        ]);
+        try {
+            // Intentar obtener el token del request
+            $token = $request->bearerToken();
+            
+            if ($token) {
+                // Usar Sanctum para encontrar y eliminar el token
+                \Laravel\Sanctum\PersonalAccessToken::findToken($token)?->delete();
+            }
+            
+            return response()->json([
+                'status' => true,
+                'message' => 'Logout exitoso',
+                'data' => null
+            ]);
+        } catch (\Exception $e) {
+            Log::error('Error al hacer logout: ' . $e->getMessage());
+            // Devolver éxito incluso si hay error, el cliente limpió su sesión
+            return response()->json([
+                'status' => true,
+                'message' => 'Logout exitoso',
+                'data' => null
+            ]);
+        }
     }
 } 

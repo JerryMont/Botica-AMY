@@ -8,6 +8,21 @@
   --success-color: #27ae60;
   --warning-color: #f39c12;
   --error-color: #e74c3c;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Variables para modo oscuro */
+html.dark-mode {
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --text-primary: #f0f0f0;
+  --text-secondary: #c0c0c0;
+  --border-color: #333333;
+  --accent-color: #5dade2;
+  --success-color: #2ecc71;
+  --warning-color: #f1c40f;
+  --error-color: #e74c3c;
+  --shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -25,6 +40,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {
@@ -52,17 +68,49 @@ button:disabled {
 input, select, textarea {
   font-family: inherit;
   transition: border-color 0.2s ease;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
 }
 
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--accent-color);
   box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
-/* Scrollbar personalizada */
+/* Estilos para tablas */
+table {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+th, td {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+th {
+  background-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+tr:hover {
+  background-color: var(--border-color);
+}
+
+/* Estilos para opciones select */
+option {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Scrollbar personalizada - Mejorada */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -72,6 +120,7 @@ input:focus, select:focus, textarea:focus {
 ::-webkit-scrollbar-thumb {
   background: var(--text-secondary);
   border-radius: 4px;
+  border: 2px solid var(--bg-primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -98,12 +147,42 @@ input:focus, select:focus, textarea:focus {
 .card {
   background-color: var(--bg-secondary);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Estilos para modales */
+.modal, dialog {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.modal-header {
+  background-color: var(--border-color);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modal-body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.modal-footer {
+  background-color: var(--border-color);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Overlay de modal */
+html.dark-mode [style*="background: rgba(44,62,80,0.18)"] {
+  background: rgba(15, 15, 15, 0.7) !important;
 }
 
 /* Estilos para estados de carga */

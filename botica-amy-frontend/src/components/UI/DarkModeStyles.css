@@ -1,0 +1,184 @@
+/* Estilos mejorados para modo oscuro - Componentes específicos */
+
+/* Tablas y data tables */
+html.dark-mode table,
+html.dark-mode [role="table"],
+html.dark-mode .table {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+html.dark-mode table th,
+html.dark-mode table td,
+html.dark-mode [role="table"] * {
+  border-color: var(--border-color);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+html.dark-mode table thead th {
+  background-color: var(--border-color);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+html.dark-mode table tbody tr:hover {
+  background-color: rgba(93, 173, 226, 0.15);
+}
+
+/* Inputs y formularios */
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+/* Labels */
+html.dark-mode label {
+  color: var(--text-primary);
+}
+
+/* Botones */
+html.dark-mode button {
+  color: var(--text-primary);
+}
+
+html.dark-mode button:not([style*="background"]) {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+}
+
+/* Dropdowns y menus */
+html.dark-mode [role="menu"],
+html.dark-mode [role="listbox"],
+html.dark-mode .dropdown-menu {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+html.dark-mode [role="option"],
+html.dark-mode .dropdown-item {
+  color: var(--text-primary);
+}
+
+html.dark-mode [role="option"]:hover,
+html.dark-mode .dropdown-item:hover {
+  background-color: var(--border-color);
+}
+
+/* Notificaciones */
+html.dark-mode .notification,
+html.dark-mode .alert,
+html.dark-mode .toast {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+/* Bloques de código */
+html.dark-mode code,
+html.dark-mode pre {
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+/* Enlaces */
+html.dark-mode a {
+  color: var(--accent-color);
+}
+
+html.dark-mode a:hover {
+  color: #5dade2;
+}
+
+/* Barras de progreso */
+html.dark-mode progress,
+html.dark-mode [role="progressbar"] {
+  background-color: var(--border-color);
+}
+
+html.dark-mode progress::-webkit-progress-bar {
+  background-color: var(--border-color);
+}
+
+html.dark-mode progress::-webkit-progress-value {
+  background-color: var(--accent-color);
+}
+
+/* Checkboxes y radios */
+html.dark-mode input[type="checkbox"],
+html.dark-mode input[type="radio"] {
+  accent-color: var(--accent-color);
+}
+
+/* Sliders */
+html.dark-mode input[type="range"] {
+  accent-color: var(--accent-color);
+}
+
+/* Headings */
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: var(--text-primary);
+}
+
+/* Bordes y separadores */
+html.dark-mode hr {
+  border-color: var(--border-color);
+}
+
+/* Tooltips */
+html.dark-mode [role="tooltip"],
+html.dark-mode .tooltip {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+/* Badges y tags */
+html.dark-mode .badge,
+html.dark-mode .tag {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Líneas de tiempo */
+html.dark-mode .timeline {
+  color: var(--text-primary);
+}
+
+html.dark-mode .timeline-item {
+  border-color: var(--border-color);
+}
+
+/* Paneles y secciones */
+html.dark-mode .panel,
+html.dark-mode section {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Asegurar contraste en elementos con estilos inline */
+html.dark-mode [style*="color: rgb"] {
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode [style*="background: rgb"] {
+  background-color: var(--bg-secondary) !important;
+}
+
+html.dark-mode [style*="border: 1px solid rgb"] {
+  border-color: var(--border-color) !important;
+}

@@ -9,10 +9,12 @@ class AuthenticateUser
 {
     public function handle(Request $request, Closure $next)
     {
-        if (!$request->user()) {
+        $user = $request->user();
+        
+        if (!$user) {
             return response()->json([
                 'status' => false,
-                'message' => 'No autorizado'
+                'message' => 'No autorizado. Por favor inicia sesión.'
             ], 401);
         }
         

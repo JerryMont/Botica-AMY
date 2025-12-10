@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DashboardWidget from '../components/Dashboard/DashboardWidget';
 import api from '../api/axios';
+import { getThemeColors, useDarkMode } from '../hooks/useDarkMode';
 
 export default function Dashboard() {
   const [stats, setStats] = useState({
@@ -11,6 +12,8 @@ export default function Dashboard() {
     stockBajo: 0
   });
   const navigate = useNavigate();
+  const isDark = useDarkMode();
+  const colors = getThemeColors();
 
   useEffect(() => {
     const fetchStats = async () => {
@@ -38,7 +41,7 @@ export default function Dashboard() {
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Dashboard</h1>
+      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Dashboard</h1>
       
       <div style={{ 
         display: 'grid', 
@@ -73,12 +76,13 @@ export default function Dashboard() {
       </div>
 
       <div style={{ 
-        backgroundColor: 'white', 
+        backgroundColor: colors.cardBg, 
         borderRadius: '8px', 
         padding: '20px', 
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)' 
+        boxShadow: `0 2px 4px ${colors.shadowColor}`,
+        color: colors.textPrimary
       }}>
-        <h2 style={{ marginTop: 0, color: '#2c3e50' }}>Acciones Rápidas</h2>
+        <h2 style={{ marginTop: 0, color: colors.textPrimary }}>Acciones Rápidas</h2>
         <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
           <button style={{
             padding: '12px 20px',

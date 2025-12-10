@@ -3,12 +3,14 @@ import VentaList from '../components/Ventas/VentaList';
 import VentaForm from '../components/Ventas/VentaForm';
 import VentaDetalle from '../components/Ventas/VentaDetalle';
 import { getVenta } from '../api/ventas';
+import { getThemeColors } from '../hooks/useDarkMode';
 
 export default function Ventas() {
   const [showForm, setShowForm] = useState(false);
   const [detalle, setDetalle] = useState(null);
   const [ventaDetalle, setVentaDetalle] = useState(null);
   const [refresh, setRefresh] = useState(false);
+  const colors = getThemeColors();
 
   const handleNuevaVenta = () => {
     setShowForm(true);
@@ -29,7 +31,7 @@ export default function Ventas() {
 
   return (
     <>
-      <h1 style={{ marginBottom: '30px', color: '#2c3e50' }}>Gestión de Ventas</h1>
+      <h1 style={{ marginBottom: '30px', color: colors.textPrimary }}>Gestión de Ventas</h1>
       
       <button 
         onClick={handleNuevaVenta}
@@ -49,11 +51,11 @@ export default function Ventas() {
 
       {showForm && (
         <div style={{
-          backgroundColor: 'white',
+          backgroundColor: colors.cardBg,
           padding: '20px',
           borderRadius: '8px',
           marginBottom: '20px',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+          boxShadow: `0 2px 4px ${colors.shadowColor}`
         }}>
           <VentaForm onSuccess={handleSuccess} onCancel={() => setShowForm(false)} />
         </div>
