@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { getServicios, deleteServicio } from '../api/servicios';
 import { useEffect } from 'react';
 import { getThemeColors } from '../hooks/useDarkMode';
+import './Servicios.css';
 
 export default function Servicios() {
   const [showForm, setShowForm] = useState(false);

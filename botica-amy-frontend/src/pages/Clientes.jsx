@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ClienteList from '../components/Clientes/ClienteList';
 import ClienteForm from '../components/Clientes/ClienteForm';
 import { getThemeColors } from '../hooks/useDarkMode';
+import './Clientes.css';
 
 export default function Clientes() {
   const [editing, setEditing] = useState(null);

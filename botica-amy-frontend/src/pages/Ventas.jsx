@@ -4,6 +4,7 @@ import VentaForm from '../components/Ventas/VentaForm';
 import VentaDetalle from '../components/Ventas/VentaDetalle';
 import { getVenta } from '../api/ventas';
 import { getThemeColors } from '../hooks/useDarkMode';
+import './Ventas.css';
 
 export default function Ventas() {
   const [showForm, setShowForm] = useState(false);

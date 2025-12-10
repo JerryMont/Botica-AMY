@@ -54,24 +54,25 @@ export function getThemeColors() {
   }
 
   return {
-    bgPrimary: '#f5f6fa',
-    bgSecondary: '#ffffff',
-    textPrimary: '#2c3e50',
-    textSecondary: '#7f8c8d',
-    textHeading: '#1a252f',
-    borderColor: '#e1e8ed',
+    /* Valores inspirados en Productos/Dashboard (modo claro) */
+    bgPrimary: '#ffffff',
+    bgSecondary: '#f9fafb',
+    textPrimary: '#1f2937',
+    textSecondary: '#6b7280',
+    textHeading: '#1f2937',
+    borderColor: '#e5e7eb',
     cardBg: '#ffffff',
-    cardBgAlt: '#f9f9f9',
+    cardBgAlt: '#f8fafc',
     inputBg: '#ffffff',
-    inputBorder: '#ddd',
-    accentColor: '#3498db',
-    successColor: '#27ae60',
-    warningColor: '#f39c12',
-    errorColor: '#e74c3c',
+    inputBorder: '#e5e7eb',
+    accentColor: '#3b82f6',
+    successColor: '#10b981',
+    warningColor: '#f59e0b',
+    errorColor: '#ef4444',
     buttonTextColor: '#ffffff',
     white: '#ffffff',
-    lightGray: '#f0f0f0',
-    darkGray: '#2c3e50',
-    shadowColor: 'rgba(0, 0, 0, 0.1)'
+    lightGray: '#f3f4f6',
+    darkGray: '#111827',
+    shadowColor: 'rgba(0, 0, 0, 0.08)'
   };
 }

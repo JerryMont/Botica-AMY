@@ -1,0 +1,551 @@
+/* ============================================================================
+   ADMINISTRACIÓN DEL SISTEMA - ESTILOS ESPECÍFICOS DEL MÓDULO
+   Soporte para modo claro y oscuro con transiciones suaves
+   ========================================================================== */
+
+/* TÍTULO PRINCIPAL */
+.admin-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  
+  /* Modo claro */
+  color: #1f2937;
+  text-shadow: none;
+  
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Modo oscuro - Título */
+html.dark-mode .admin-title {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================================
+   DESCRIPCIÓN
+   ========================================================================== */
+.admin-description {
+  margin-bottom: 20px;
+  color: #6b7280;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-description {
+  color: #d1d5db;
+}
+
+/* ============================================================================
+   CONTENEDOR PRINCIPAL (ADMINISTRACIÓN DE USUARIOS)
+   ========================================================================== */
+.admin-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+html.dark-mode .admin-container {
+  background-color: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================================
+   ENCABEZADO DEL CONTENEDOR
+   ========================================================================== */
+.admin-container h2 {
+  margin: 0 0 16px 0;
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-container h2 {
+  color: #f3f4f6;
+}
+
+/* ============================================================================
+   BOTÓN NUEVO USUARIO
+   ========================================================================== */
+.admin-btn-new-user {
+  padding: 10px 16px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.admin-btn-new-user:hover:not(:disabled) {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode .admin-btn-new-user {
+  background-color: #818cf8;
+}
+
+html.dark-mode .admin-btn-new-user:hover:not(:disabled) {
+  background-color: #6366f1;
+}
+
+/* ============================================================================
+   TABLA DE USUARIOS
+   ========================================================================== */
+.admin-table-container {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table thead {
+  background-color: #f3f4f6;
+  transition: background-color 0.3s ease;
+}
+
+html.dark-mode .admin-table thead {
+  background-color: #374151;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 13px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-table th {
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #1f2937;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-table td {
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #f9fafb;
+  transition: background-color 0.2s ease;
+}
+
+html.dark-mode .admin-table tbody tr:hover {
+  background-color: #2d3748;
+}
+
+/* ============================================================================
+   BADGE DE ESTADO (Activo/Inactivo)
+   ========================================================================== */
+.admin-status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.admin-status-badge.active {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.admin-status-badge.inactive {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+html.dark-mode .admin-status-badge.active {
+  background-color: #34d399;
+  color: #000;
+}
+
+html.dark-mode .admin-status-badge.inactive {
+  background-color: #f87171;
+  color: #fff;
+}
+
+/* ============================================================================
+   BOTONES EN TABLA
+   ========================================================================== */
+.admin-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+
+.admin-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.admin-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.admin-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-btn-edit {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.admin-btn-edit:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+html.dark-mode .admin-btn-edit {
+  background-color: #60a5fa;
+}
+
+html.dark-mode .admin-btn-edit:hover:not(:disabled) {
+  background-color: #3b82f6;
+}
+
+.admin-btn-delete {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.admin-btn-delete:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+html.dark-mode .admin-btn-delete {
+  background-color: #f87171;
+}
+
+html.dark-mode .admin-btn-delete:hover:not(:disabled) {
+  background-color: #ef4444;
+}
+
+/* ============================================================================
+   MODAL / FORMULARIO OVERLAY
+   ========================================================================== */
+.admin-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* ============================================================================
+   FORMULARIO MODAL
+   ========================================================================== */
+.admin-modal-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  padding: 24px;
+  min-width: 360px;
+  max-width: 420px;
+  display: grid;
+  gap: 12px;
+  
+  transition: background-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+html.dark-mode .admin-modal-form {
+  background-color: #1f2937;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================================================================
+   ENCABEZADO DEL FORMULARIO
+   ========================================================================== */
+.admin-modal-form h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-modal-form h3 {
+  color: #f3f4f6;
+}
+
+/* ============================================================================
+   CAMPOS DEL FORMULARIO
+   ========================================================================== */
+.admin-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-form-label {
+  display: block;
+  color: #1f2937;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-form-label {
+  color: #f3f4f6;
+}
+
+.admin-form-input,
+.admin-form-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  color: #1f2937;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.2s ease;
+}
+
+.admin-form-input::placeholder {
+  color: #9ca3af;
+}
+
+.admin-form-input:focus,
+.admin-form-select:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+html.dark-mode .admin-form-input,
+html.dark-mode .admin-form-select {
+  background-color: #374151;
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+html.dark-mode .admin-form-input::placeholder {
+  color: #9ca3af;
+}
+
+html.dark-mode .admin-form-input:focus,
+html.dark-mode .admin-form-select:focus {
+  background-color: #4b5563;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+/* ============================================================================
+   CHECKBOX Y LABEL
+   ========================================================================== */
+.admin-form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1f2937;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-form-checkbox {
+  color: #f3f4f6;
+}
+
+.admin-form-checkbox input[type="checkbox"] {
+  cursor: pointer;
+}
+
+/* ============================================================================
+   MENSAJE DE ERROR
+   ========================================================================== */
+.admin-form-error {
+  color: #ef4444;
+  background-color: #fef2f2;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+}
+
+html.dark-mode .admin-form-error {
+  background-color: #7f1d1d;
+  color: #fecaca;
+}
+
+/* ============================================================================
+   ERRORES DE VALIDACIÓN
+   ========================================================================== */
+.admin-form-field-error {
+  color: #ef4444;
+  font-size: 13px;
+}
+
+/* ============================================================================
+   BOTONES DEL FORMULARIO
+   ========================================================================== */
+.admin-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.admin-form-submit {
+  padding: 10px 18px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.admin-form-submit:hover:not(:disabled) {
+  background-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.admin-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+html.dark-mode .admin-form-submit {
+  background-color: #34d399;
+  color: #000;
+}
+
+html.dark-mode .admin-form-submit:hover:not(:disabled) {
+  background-color: #10b981;
+}
+
+.admin-form-cancel {
+  padding: 10px 18px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.admin-form-cancel:hover:not(:disabled) {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.admin-form-cancel:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+html.dark-mode .admin-form-cancel {
+  background-color: #f87171;
+  color: #fff;
+}
+
+html.dark-mode .admin-form-cancel:hover:not(:disabled) {
+  background-color: #ef4444;
+}
+
+/* ============================================================================
+   SUGERENCIA DE USERNAME
+   ========================================================================== */
+.admin-username-suggestion {
+  font-size: 12px;
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-username-suggestion {
+  color: #d1d5db;
+}
+
+.admin-username-suggestion button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+html.dark-mode .admin-username-suggestion button {
+  background-color: #4b5563;
+  color: #f3f4f6;
+}
+
+.admin-username-suggestion button:hover {
+  background-color: #d1d5db;
+}
+
+html.dark-mode .admin-username-suggestion button:hover {
+  background-color: #6b7280;
+}
+
+/* ============================================================================
+   LOADING STATE
+   ========================================================================== */
+.admin-loading {
+  text-align: center;
+  padding: 24px;
+  color: #6b7280;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .admin-loading {
+  color: #d1d5db;
+}

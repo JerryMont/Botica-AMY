@@ -1,5 +1,6 @@
 import UsuarioAdmin from '../components/Admin/UsuarioAdmin';
 import { getThemeColors } from '../hooks/useDarkMode';
+import './Admin.css';
 
 export default function Admin() {
   const colors = getThemeColors();

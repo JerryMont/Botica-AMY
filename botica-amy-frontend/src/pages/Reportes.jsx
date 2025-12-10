@@ -1,5 +1,6 @@
 import ReporteList from '../components/Reportes/ReporteList';
 import { getThemeColors } from '../hooks/useDarkMode';
+import './Reportes.css';
 
 export default function Reportes() {
   const colors = getThemeColors();

@@ -1,0 +1,434 @@
+/* ============================================================================
+   PROCESO DE VENTAS - ESTILOS ESPECÍFICOS DEL MÓDULO
+   Soporte para modo claro y oscuro con transiciones suaves
+   ========================================================================== */
+
+/* TÍTULO PRINCIPAL */
+.ventas-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  
+  /* Modo claro */
+  color: #1f2937;
+  text-shadow: none;
+  
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Modo oscuro - Título */
+html.dark-mode .ventas-title {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================================
+   BOTÓN REGISTRAR VENTA
+   ========================================================================== */
+.ventas-btn-new {
+  padding: 12px 20px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.ventas-btn-new:hover:not(:disabled) {
+  background-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode .ventas-btn-new {
+  background-color: #34d399;
+}
+
+html.dark-mode .ventas-btn-new:hover:not(:disabled) {
+  background-color: #10b981;
+}
+
+/* ============================================================================
+   FORMULARIO CONTENEDOR
+   ========================================================================== */
+.ventas-form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+html.dark-mode .ventas-form-container {
+  background-color: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================================
+   CONTENEDOR PRINCIPAL DEL LISTADO
+   ========================================================================== */
+.ventas-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+html.dark-mode .ventas-container {
+  background-color: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================================
+   ENCABEZADO DEL LISTADO (h2 "Lista de Ventas")
+   ========================================================================== */
+.ventas-container h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .ventas-container h2 {
+  color: #f3f4f6;
+}
+
+/* ============================================================================
+   INPUT DE BÚSQUEDA
+   ========================================================================== */
+.ventas-search-input {
+  background-color: #f9fafb;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.2s ease;
+}
+
+.ventas-search-input::placeholder {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.ventas-search-input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+html.dark-mode .ventas-search-input {
+  background-color: #374151;
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+html.dark-mode .ventas-search-input::placeholder {
+  color: #9ca3af;
+}
+
+html.dark-mode .ventas-search-input:focus {
+  background-color: #4b5563;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+/* ============================================================================
+   TARJETAS DE VENTAS
+   ========================================================================== */
+.ventas-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ventas-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+
+html.dark-mode .ventas-card {
+  background-color: #2d3748;
+  border-color: #4b5563;
+}
+
+html.dark-mode .ventas-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #60a5fa;
+}
+
+/* TÍTULO DE LA TARJETA */
+.ventas-card h3 {
+  margin: 0 0 10px 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .ventas-card h3 {
+  color: #f3f4f6;
+}
+
+/* INFORMACIÓN DE LA TARJETA */
+.ventas-card p {
+  margin: 5px 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .ventas-card p {
+  color: #d1d5db;
+}
+
+/* ============================================================================
+   ESTADO DE VENTA
+   ========================================================================== */
+.ventas-status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.ventas-status.completada {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.ventas-status.pendiente {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.ventas-status.cancelada {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+html.dark-mode .ventas-status.completada {
+  background-color: #34d399;
+  color: #000;
+}
+
+html.dark-mode .ventas-status.pendiente {
+  background-color: #fbbf24;
+  color: #000;
+}
+
+html.dark-mode .ventas-status.cancelada {
+  background-color: #f87171;
+  color: #fff;
+}
+
+/* ============================================================================
+   PRECIO TOTAL
+   ========================================================================== */
+.ventas-total {
+  font-weight: 700;
+  color: #10b981;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .ventas-total {
+  color: #34d399;
+}
+
+/* ============================================================================
+   BOTONES
+   ========================================================================== */
+.ventas-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.ventas-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.ventas-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.ventas-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ventas-btn-new-venta {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.ventas-btn-new-venta:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+html.dark-mode .ventas-btn-new-venta {
+  background-color: #60a5fa;
+}
+
+html.dark-mode .ventas-btn-new-venta:hover:not(:disabled) {
+  background-color: #3b82f6;
+}
+
+.ventas-btn-detail {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.ventas-btn-detail:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+html.dark-mode .ventas-btn-detail {
+  background-color: #60a5fa;
+}
+
+html.dark-mode .ventas-btn-detail:hover:not(:disabled) {
+  background-color: #3b82f6;
+}
+
+/* ============================================================================
+   GRID DE VENTAS
+   ========================================================================== */
+.ventas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ============================================================================
+   BOTÓN EXPORTAR
+   ========================================================================== */
+.ventas-btn-export {
+  padding: 8px 16px;
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.ventas-btn-export:hover:not(:disabled) {
+  background-color: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+html.dark-mode .ventas-btn-export {
+  background-color: #34d399;
+}
+
+html.dark-mode .ventas-btn-export:hover:not(:disabled) {
+  background-color: #10b981;
+}
+
+/* ============================================================================
+   MENSAJE VACÍO
+   ========================================================================== */
+.ventas-empty {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .ventas-empty {
+  color: #9ca3af;
+}
+
+/* ============================================================================
+   PAGINACIÓN
+   ========================================================================== */
+.ventas-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ventas-pagination button {
+  padding: 6px 12px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.ventas-pagination button:hover:not(:disabled) {
+  background-color: #d1d5db;
+}
+
+.ventas-pagination button.active {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+html.dark-mode .ventas-pagination button {
+  background-color: #4b5563;
+  color: #f3f4f6;
+  border-color: #6b7280;
+}
+
+html.dark-mode .ventas-pagination button:hover:not(:disabled) {
+  background-color: #6b7280;
+}
+
+html.dark-mode .ventas-pagination button.active {
+  background-color: #60a5fa;
+  border-color: #60a5fa;
+}
