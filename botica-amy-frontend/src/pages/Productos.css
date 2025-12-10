@@ -1,0 +1,382 @@
+/* ============================================================================
+   GESTIÓN DE PRODUCTOS - ESTILOS ESPECÍFICOS DEL MÓDULO
+   Soporte para modo claro y oscuro con transiciones suaves
+   ========================================================================== */
+
+/* TÍTULO PRINCIPAL */
+.productos-title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  
+  /* Modo claro */
+  color: #1f2937;
+  text-shadow: none;
+  
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Modo oscuro - Título */
+html.dark-mode .productos-title {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================================================
+   CONTENEDOR PRINCIPAL DEL LISTADO
+   ========================================================================== */
+.productos-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  
+  transition: background-color 0.3s ease, 
+              border-color 0.3s ease, 
+              box-shadow 0.3s ease;
+}
+
+/* Modo oscuro - Contenedor */
+html.dark-mode .productos-container {
+  background-color: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================================================
+   ENCABEZADO DEL LISTADO (h2 "Lista de Productos")
+   ========================================================================== */
+.productos-container h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Modo oscuro - h2 */
+html.dark-mode .productos-container h2 {
+  color: #f3f4f6;
+}
+
+/* ============================================================================
+   INPUT DE BÚSQUEDA Y FILTROS
+   ========================================================================== */
+.productos-search-input {
+  background-color: #f9fafb;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.2s ease;
+}
+
+.productos-search-input::placeholder {
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.productos-search-input:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Modo oscuro - Input */
+html.dark-mode .productos-search-input {
+  background-color: #374151;
+  color: #f3f4f6;
+  border-color: #4b5563;
+}
+
+html.dark-mode .productos-search-input::placeholder {
+  color: #9ca3af;
+}
+
+html.dark-mode .productos-search-input:focus {
+  background-color: #4b5563;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+/* ============================================================================
+   TARJETAS DE PRODUCTOS INDIVIDUALES
+   ========================================================================== */
+.productos-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.productos-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+
+/* Modo oscuro - Tarjetas */
+html.dark-mode .productos-card {
+  background-color: #2d3748;
+  border-color: #4b5563;
+}
+
+html.dark-mode .productos-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #60a5fa;
+}
+
+/* TÍTULO DE LA TARJETA */
+.productos-card h3 {
+  margin: 0 0 10px 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .productos-card h3 {
+  color: #f3f4f6;
+}
+
+/* DESCRIPCIÓN DE LA TARJETA */
+.productos-card p {
+  margin: 5px 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .productos-card p {
+  color: #d1d5db;
+}
+
+/* ============================================================================
+   INFORMACIÓN DE PRECIOS Y STOCK
+   ========================================================================== */
+.productos-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.productos-price {
+  font-weight: 600;
+  color: #059669;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .productos-price {
+  color: #10b981;
+}
+
+.productos-stock {
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.productos-stock.low {
+  color: #dc2626;
+}
+
+.productos-stock.medium {
+  color: #f59e0b;
+}
+
+.productos-stock.high {
+  color: #059669;
+}
+
+html.dark-mode .productos-stock.low {
+  color: #ef4444;
+}
+
+html.dark-mode .productos-stock.medium {
+  color: #fbbf24;
+}
+
+html.dark-mode .productos-stock.high {
+  color: #10b981;
+}
+
+/* ============================================================================
+   BOTONES
+   ========================================================================== */
+.productos-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.productos-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.productos-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.productos-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* BOTÓN PRIMARIO (Nuevo Producto) */
+.productos-btn-primary {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.productos-btn-primary:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+html.dark-mode .productos-btn-primary {
+  background-color: #60a5fa;
+}
+
+html.dark-mode .productos-btn-primary:hover:not(:disabled) {
+  background-color: #3b82f6;
+}
+
+/* BOTÓN ÉXITO (CSV) */
+.productos-btn-success {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.productos-btn-success:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+html.dark-mode .productos-btn-success {
+  background-color: #34d399;
+}
+
+html.dark-mode .productos-btn-success:hover:not(:disabled) {
+  background-color: #10b981;
+}
+
+/* BOTÓN PELIGRO (PDF, Eliminar) */
+.productos-btn-danger {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+.productos-btn-danger:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+html.dark-mode .productos-btn-danger {
+  background-color: #f87171;
+}
+
+html.dark-mode .productos-btn-danger:hover:not(:disabled) {
+  background-color: #ef4444;
+}
+
+/* BOTÓN EDITAR */
+.productos-btn-edit {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+/* ============================================================================
+   GRID DE PRODUCTOS
+   ========================================================================== */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ============================================================================
+   MENSAJE VACÍO
+   ========================================================================== */
+.productos-empty {
+  text-align: center;
+  padding: 40px;
+  color: #9ca3af;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .productos-empty {
+  color: #9ca3af;
+}
+
+/* ============================================================================
+   PAGINACIÓN
+   ========================================================================== */
+.productos-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.productos-pagination button {
+  padding: 6px 12px;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.productos-pagination button:hover:not(:disabled) {
+  background-color: #d1d5db;
+}
+
+.productos-pagination button.active {
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-color: #3b82f6;
+}
+
+html.dark-mode .productos-pagination button {
+  background-color: #4b5563;
+  color: #f3f4f6;
+  border-color: #6b7280;
+}
+
+html.dark-mode .productos-pagination button:hover:not(:disabled) {
+  background-color: #6b7280;
+}
+
+html.dark-mode .productos-pagination button.active {
+  background-color: #60a5fa;
+  border-color: #60a5fa;
+}
