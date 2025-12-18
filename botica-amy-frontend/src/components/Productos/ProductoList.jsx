@@ -36,7 +36,7 @@ export default function ProductoList() {
   const filteredProductos = useMemo(() => {
     let filtered = productos;
     if (searchTerm) {
-      filtered = filtered.filter(p => 
+      filtered = filtered.filter(p =>
         p.nombre_producto.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
@@ -55,12 +55,17 @@ export default function ProductoList() {
 
   const handleExport = (format = 'csv') => {
     const config = exportConfigs.productos;
-    if (format === 'pdf') {
-      exportToPDF(filteredProductos, config.title, config.columns, 'productos');
-      window.showToast('Productos exportados a PDF exitosamente', 'success');
-    } else {
-      exportToCSV(filteredProductos, config.columns, 'productos');
-      window.showToast('Productos exportados a CSV exitosamente', 'success');
+    try {
+      if (format === 'pdf') {
+        exportToPDF(filteredProductos, config.title, config.columns, 'productos');
+        window.showToast('Productos exportados a PDF exitosamente', 'success');
+      } else {
+        exportToCSV(filteredProductos, config.columns, 'productos');
+        window.showToast('Productos exportados a CSV exitosamente', 'success');
+      }
+    } catch (error) {
+      console.error('Error en exportación:', error);
+      window.showToast(error.message || 'Error al exportar datos', 'error');
     }
   };
 
@@ -108,7 +113,7 @@ export default function ProductoList() {
         filters={filters}
         onFilterChange={handleFilterChange}
       />
-      
+
       {filteredProductos.length === 0 ? (
         <p className="productos-empty">
           {searchTerm ? 'No se encontraron productos con esa búsqueda' : 'No hay productos registrados'}

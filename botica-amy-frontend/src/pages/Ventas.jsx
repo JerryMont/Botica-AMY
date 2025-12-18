@@ -31,29 +31,57 @@ export default function Ventas() {
   };
 
   return (
-    <>
-      <h1 style={{ 
-        marginBottom: '30px', 
-        color: colors.textHeading,
-        fontWeight: '700',
-        fontSize: '28px',
-        letterSpacing: '-0.5px'
-      }}>Gestión de Ventas</h1>
-      
-      <button 
+    <div className="fade-in" style={{ padding: '32px', maxWidth: '1400px', margin: '0 auto' }}>
+      <div style={{ marginBottom: '32px' }}>
+        <h1 style={{
+          marginBottom: '8px',
+          color: colors.textHeading,
+          fontWeight: '800',
+          fontSize: '36px',
+          letterSpacing: '-0.02em',
+          background: 'linear-gradient(135deg, hsl(38, 92%, 50%) 0%, hsl(25, 85%, 60%) 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>Gestión de Ventas</h1>
+        <p style={{
+          color: colors.textSecondary,
+          fontSize: '16px',
+          margin: 0
+        }}>
+          Registra y administra las ventas de la farmacia
+        </p>
+      </div>
+
+      <button
         onClick={handleNuevaVenta}
         style={{
-          padding: '12px 20px',
-          backgroundColor: colors.successColor,
-          color: colors.buttonTextColor,
+          padding: '14px 28px',
+          background: 'linear-gradient(135deg, hsl(38, 92%, 50%) 0%, hsl(25, 85%, 60%) 100%)',
+          color: 'white',
           border: 'none',
-          borderRadius: '6px',
+          borderRadius: '12px',
           cursor: 'pointer',
-          fontSize: '14px',
-          marginBottom: '20px'
+          fontSize: '15px',
+          fontWeight: '600',
+          marginBottom: '24px',
+          boxShadow: '0 4px 12px rgba(243, 156, 18, 0.3)',
+          transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '8px'
+        }}
+        onMouseEnter={(e) => {
+          e.target.style.transform = 'translateY(-2px)';
+          e.target.style.boxShadow = '0 6px 16px rgba(243, 156, 18, 0.4)';
+        }}
+        onMouseLeave={(e) => {
+          e.target.style.transform = 'translateY(0)';
+          e.target.style.boxShadow = '0 4px 12px rgba(243, 156, 18, 0.3)';
         }}
       >
-        💰 Registrar Venta
+        <span>💰</span>
+        <span>Registrar Venta</span>
       </button>
 
       {showForm && (
@@ -73,6 +101,6 @@ export default function Ventas() {
       {detalle && ventaDetalle && (
         <VentaDetalle venta={ventaDetalle} onClose={() => setDetalle(null)} />
       )}
-    </>
+    </div>
   );
 } 

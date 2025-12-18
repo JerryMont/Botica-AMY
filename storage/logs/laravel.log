@@ -110,3 +110,364 @@
 [2025-12-10 19:44:28] local.DEBUG: Token válido encontrado para usuario: admin  
 [2025-12-10 19:44:34] local.DEBUG: Token válido encontrado para usuario: admin  
 [2025-12-10 19:44:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:23] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (Connection: mysql, SQL: select * from `usuarios` where `nombre_usuario` = admin limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (Connection: mysql, SQL: select * from `usuarios` where `nombre_usuario` = admin limit 1) at D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(398): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3106): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3091): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3676): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3090): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(811): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(793): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(343): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\app\\Http\\Controllers\\Api\\AuthController.php(21): Illuminate\\Database\\Eloquent\\Builder->first()
+#10 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\AuthController->login(Object(Illuminate\\Http\\Request))
+#11 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('login', Array)
+#12 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\AuthController), 'login')
+#13 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#14 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#15 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#22 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#24 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#46 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión at D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:66)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(66): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(44): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#2 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(185): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1231): call_user_func(Object(Closure))
+#6 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1267): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(512): Illuminate\\Database\\Connection->getReadPdo()
+#8 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(407): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#10 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#11 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(398): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#12 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3106): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#13 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3091): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3676): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#15 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3090): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#16 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(811): Illuminate\\Database\\Query\\Builder->get(Array)
+#17 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(793): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#18 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(343): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#19 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\app\\Http\\Controllers\\Api\\AuthController.php(21): Illuminate\\Database\\Eloquent\\Builder->first()
+#20 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\AuthController->login(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('login', Array)
+#22 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\AuthController), 'login')
+#23 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#24 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#25 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\Xampp\\htdocs\\Botica_amy\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2025-12-17 13:02:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:50] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:50] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:02:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:50] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:57] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:16:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:04] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:17:04] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:20] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:20] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:43] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:43] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:18:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:19:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:30] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:30] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:42] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:42] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:23:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:11] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:11] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:35] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-17 13:24:35] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:28:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:29:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:57] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:30:57] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:15] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:15] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:35] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:35] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:39] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:39] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:31:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:39] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:32:57] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:33:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:07] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:07] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:34:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:35:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:35:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:30] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:41:31] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:47:54] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:47:54] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:52:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:52:58] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:53:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:53:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:53:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:53:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:53:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:53:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:04] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:04] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 22:54:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:14:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:16:01] local.DEBUG: Token válido encontrado para usuario: admin  
+[2025-12-18 23:16:01] local.DEBUG: Token válido encontrado para usuario: admin  
