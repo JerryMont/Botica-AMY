@@ -35,6 +35,12 @@ class Usuario extends Authenticatable
         'activo' => 'boolean',
     ];
 
+    // Método para obtener el nombre del identificador de autenticación
+    public function getAuthIdentifierName()
+    {
+        return 'nombre_usuario';
+    }
+
     // Relación: Usuario tiene muchas ventas
     public function ventas()
     {

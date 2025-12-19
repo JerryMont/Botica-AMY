@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a Botica AMY</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #f8fafc; color: #222; text-align: center; padding-top: 10%; }
-        h1 { color: #38bdf8; }
-    </style>
+    <title>Botica AMY</title>
+
+    {{-- 1. AQUÍ VA EL CSS (ESTILOS) QUE TE GENERÓ EL BUILD --}}
+    <link rel="stylesheet" crossorigin href="/assets/index-POEH64lJ.css">
 </head>
 <body>
-    <h1>¡Bienvenido a Botica {{ $nombre }}!</h1>
-    <p>Tu backend Laravel está funcionando correctamente.</p>
+    {{-- 2. ESTE DIV ES LO MÁS IMPORTANTE: --}}
+    {{-- Es la "caja" vacía donde React va a dibujar todo tu sistema --}}
+    <div id="root"></div>
+
+    {{-- 3. AQUÍ VA EL JAVASCRIPT (LÓGICA) QUE TE GENERÓ EL BUILD --}}
+    <script type="module" crossorigin src="/assets/index-BSF6SfiG.js"></script>
 </body>
-</html> 
+</html>
