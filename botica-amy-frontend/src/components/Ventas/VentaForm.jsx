@@ -41,10 +41,18 @@ export default function VentaForm({ onSuccess, onCancel }) {
     setError(null);
     try {
       const total = form.detalles.reduce((sum, d) => sum + d.cantidad * d.precio_unitario, 0);
+      const now = new Date();
+      const fecha = now.getFullYear() + '-' +
+        String(now.getMonth() + 1).padStart(2, '0') + '-' +
+        String(now.getDate()).padStart(2, '0') + ' ' +
+        String(now.getHours()).padStart(2, '0') + ':' +
+        String(now.getMinutes()).padStart(2, '0') + ':' +
+        String(now.getSeconds()).padStart(2, '0');
+
       const ventaData = {
         ...form,
         usuario_id: usuario_id || 1,
-        fecha: new Date().toISOString(),
+        fecha: fecha,
         total,
       };
       await createVenta(ventaData);
