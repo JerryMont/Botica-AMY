@@ -122,20 +122,52 @@ class VentaController extends Controller
 
     public function destroy($id)
     {
-        $venta = Venta::find($id);
-        if (!$venta) {
+        DB::beginTransaction();
+        try {
+            $venta = Venta::with('detalles')->find($id);
+            if (!$venta) {
+                return response()->json([
+                    'status' => false,
+                    'message' => 'Venta no encontrada',
+                    'data' => null
+                ], 404);
+            }
+
+            // Restaurar stock
+            foreach ($venta->detalles as $detalle) {
+                $producto = \App\Models\Producto::find($detalle->id_producto);
+                if ($producto) {
+                    $producto->stock += $detalle->cantidad;
+                    $producto->save();
+
+                    // Registrar movimiento de devolución
+                    \App\Models\MovimientoStock::create([
+                        'id_producto' => $detalle->id_producto,
+                        'tipo' => 'entrada',
+                        'cantidad' => $detalle->cantidad,
+                        'fecha' => date('Y-m-d H:i:s'),
+                        'descripcion' => "Devolución por anulación de Venta #{$venta->id_venta}",
+                    ]);
+                }
+            }
+
+            $venta->detalles()->delete();
+            $venta->delete();
+            
+            DB::commit();
+
+            return response()->json([
+                'status' => true,
+                'message' => 'Venta eliminada y stock restaurado correctamente',
+                'data' => null
+            ]);
+        } catch (\Exception $e) {
+            DB::rollBack();
             return response()->json([
                 'status' => false,
-                'message' => 'Venta no encontrada',
+                'message' => 'Error al eliminar la venta: ' . $e->getMessage(),
                 'data' => null
-            ], 404);
+            ], 500);
         }
-        $venta->detalles()->delete();
-        $venta->delete();
-        return response()->json([
-            'status' => true,
-            'message' => 'Venta eliminada correctamente',
-            'data' => null
-        ]);
     }
 } 

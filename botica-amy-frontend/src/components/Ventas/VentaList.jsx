@@ -77,6 +77,18 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     window.showToast('Ventas exportadas exitosamente', 'success');
   };
 
+  const handleDelete = async (id) => {
+    if (window.confirm('¿Estás seguro de eliminar esta venta? Esta acción restaurará el stock de los productos.')) {
+      try {
+        await api.delete(`/ventas/${id}`);
+        setVentas(ventas.filter(v => v.id_venta !== id));
+        window.showToast('Venta eliminada y stock restaurado', 'success');
+      } catch (error) {
+        window.showToast('Error al eliminar la venta', 'error');
+      }
+    }
+  };
+
   if (loading) {
     return (
       <div style={{ textAlign: 'center', padding: '40px', color: colors.textPrimary }}>
@@ -182,20 +194,36 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                   }}>
                     S/ {v.total}
                   </span>
-                  <button
-                    onClick={() => onViewDetail(v)}
-                    style={{
-                      padding: '6px 12px',
-                      backgroundColor: colors.accentColor,
-                      color: colors.buttonTextColor,
-                      border: 'none',
-                      borderRadius: '4px',
-                      cursor: 'pointer',
-                      fontSize: '12px'
-                    }}
-                  >
-                    👁️ Ver Detalle
-                  </button>
+                  <div style={{ display: 'flex', gap: '8px' }}>
+                    <button
+                      onClick={() => onViewDetail(v)}
+                      style={{
+                        padding: '6px 12px',
+                        backgroundColor: colors.accentColor,
+                        color: colors.buttonTextColor,
+                        border: 'none',
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        fontSize: '12px'
+                      }}
+                    >
+                      👁️ Ver Detalle
+                    </button>
+                    <button
+                      onClick={() => handleDelete(v.id_venta)}
+                      style={{
+                        padding: '6px 12px',
+                        backgroundColor: '#ef4444',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        fontSize: '12px'
+                      }}
+                    >
+                      🗑️ Eliminar
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}

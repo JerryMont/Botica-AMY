@@ -23,11 +23,19 @@ export default function VentaForm({ onSuccess, onCancel }) {
   const handleProducto = (idx, field, value) => {
     const detalles = [...form.detalles];
     detalles[idx][field] = value;
+    
+    if (field === 'id_producto') {
+      const producto = productos.find(p => p.id_producto == value);
+      if (producto) {
+        detalles[idx].precio_unitario = Number(producto.precio);
+      }
+    }
+
     setForm({ ...form, detalles });
   };
 
   const addDetalle = () => {
-    setForm({ ...form, detalles: [...form.detalles, { id_producto: '', cantidad: 1, precio_unitario: 0 }] });
+    setForm({ ...form, detalles: [...form.detalles, { tempId: Date.now(), id_producto: '', cantidad: 1, precio_unitario: 0 }] });
   };
 
   const removeDetalle = idx => {
@@ -51,6 +59,7 @@ export default function VentaForm({ onSuccess, onCancel }) {
 
       const ventaData = {
         ...form,
+        detalles: form.detalles.map(({ tempId, ...rest }) => rest),
         usuario_id: usuario_id || 1,
         fecha: fecha,
         total,
@@ -81,7 +90,7 @@ export default function VentaForm({ onSuccess, onCancel }) {
       </div>
       <h4 style={{ color: '#2c3e50', margin: '18px 0 8px 0', fontWeight: 700 }}>Productos</h4>
       {form.detalles.map((d, idx) => (
-        <div key={idx} style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 8, background: '#f8fafc', borderRadius: 8, padding: 10 }}>
+        <div key={d.tempId || idx} style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 8, background: '#f8fafc', borderRadius: 8, padding: 10 }}>
           <select value={d.id_producto} onChange={e => handleProducto(idx, 'id_producto', e.target.value)} required style={{ flex: 2, padding: 8, borderRadius: 6, border: '1px solid #ccc' }}>
             <option value="">Seleccione producto</option>
             {productos.map(p => (
