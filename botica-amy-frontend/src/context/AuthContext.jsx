@@ -11,11 +11,34 @@ export function AuthProvider({ children }) {
   });
 
   const login = async (nombre_usuario, password) => {
-    const { data } = await api.post('/login', { nombre_usuario, password });
-    localStorage.setItem('token', data.data.token);
-    localStorage.setItem('user', JSON.stringify(data.data.usuario));
-    setUser(data.data.usuario);
-    return data;
+    // En producción, usar simple-login.php
+    if (import.meta.env.PROD) {
+      const response = await fetch('https://logistica-amy.infinityfreeapp.com/simple-login.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ nombre_usuario, password })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || data.message || 'Error de login');
+      }
+
+      localStorage.setItem('token', data.data.token);
+      localStorage.setItem('user', JSON.stringify(data.data.usuario));
+      setUser(data.data.usuario);
+      return data;
+    } else {
+      // En desarrollo, usar Laravel API
+      const { data } = await api.post('/login', { nombre_usuario, password });
+      localStorage.setItem('token', data.data.token);
+      localStorage.setItem('user', JSON.stringify(data.data.usuario));
+      setUser(data.data.usuario);
+      return data;
+    }
   };
 
   const logout = async () => {
@@ -42,4 +65,4 @@ export function AuthProvider({ children }) {
 
 export function useAuth() {
   return useContext(AuthContext);
-} 
+}

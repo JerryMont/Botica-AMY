@@ -1,4 +1,22 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Permitir acceso directo a archivos PHP (para diagnósticos)
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteCond %{REQUEST_FILENAME} \.php$
+    RewriteRule ^ - [L]
+
+    # Si el archivo existe, servirlo directamente
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+
+    # Si el directorio existe, permitir acceso
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Rutas de API van a Laravel
+    RewriteRule ^api/ index.php [L]
+
+    # Todo lo demás va a React (index.html)
+    RewriteRule ^ index.html [L]
 </IfModule>
