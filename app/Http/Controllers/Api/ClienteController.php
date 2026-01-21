@@ -85,7 +85,16 @@ class ClienteController extends Controller
                 ], 404);
             }
             
-            $cliente->update($request->validated());
+            $data = $request->validated();
+
+            // Manejar fecha_inactividad
+            if ($data['activo'] == 0 && $cliente->activo == 1) {
+                $data['fecha_inactividad'] = now();
+            } elseif ($data['activo'] == 1 && $cliente->activo == 0) {
+                $data['fecha_inactividad'] = null;
+            }
+
+            $cliente->update($data);
             
             return response()->json([
                 'status' => true,

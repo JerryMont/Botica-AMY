@@ -20,6 +20,7 @@ class UpdateClienteRequest extends FormRequest
             'email' => 'required|email|unique:clientes,email,' . $clienteId . ',id_cliente|max:255',
             'direccion' => 'nullable|string|max:255',
             'telefono' => 'nullable|string|max:20',
+            'activo' => 'required|boolean',
         ];
     }
 
@@ -33,6 +34,8 @@ class UpdateClienteRequest extends FormRequest
             'email.unique' => 'Este email ya está registrado por otro cliente. Por favor, use otro email',
             'direccion.string' => 'La dirección debe ser texto',
             'telefono.string' => 'El teléfono debe ser texto',
+            'activo.required' => 'El estado activo es obligatorio',
+            'activo.boolean' => 'El estado activo debe ser verdadero o falso',
         ];
     }
 } 

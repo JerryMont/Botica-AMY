@@ -85,6 +85,9 @@
                             📍 {{ $cliente->direccion }}
                         </p>
                     @endif
+                    <p style="margin: 5px 0; color: #7f8c8d; font-size: 14px;">
+                        Estado: <strong style="color: {{ $cliente->estado == 'Activo' ? '#27ae60' : ($cliente->estado == 'Desactivado' ? '#f39c12' : '#e74c3c') }};">{{ $cliente->estado }}</strong>
+                    </p>
                     
                     <div style="margin-top: 15px; display: flex; gap: 10px;">
                         <a href="{{ route('clientes.edit', $cliente) }}" class="btn btn-sm btn-primary">

@@ -23,6 +23,15 @@
     @endif
 
     <form method="POST" action="{{ route('clientes.update', $cliente) }}">
+            <div style="margin-bottom: 20px;">
+                <label for="activo" style="display: block; margin-bottom: 5px; color: #2c3e50; font-weight: bold;">
+                    Activo *
+                </label>
+                <select id="activo" name="activo" required>
+                    <option value="1" {{ $cliente->activo ? 'selected' : '' }}>Sí</option>
+                    <option value="0" {{ !$cliente->activo ? 'selected' : '' }}>No</option>
+                </select>
+            </div>
         @csrf
         @method('PUT')
         

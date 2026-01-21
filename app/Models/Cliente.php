@@ -18,7 +18,27 @@ class Cliente extends Model
         'email',
         'direccion',
         'telefono',
+        'activo',
+        'fecha_inactividad',
     ];
+
+    protected $casts = [
+        'fecha_inactividad' => 'datetime',
+    ];
+
+    // Accessor para el estado
+    public function getEstadoAttribute()
+    {
+        if ($this->activo) {
+            return 'Activo';
+        }
+
+        if ($this->fecha_inactividad && $this->fecha_inactividad->addDays(30)->isPast()) {
+            return 'Inactivo';
+        }
+
+        return 'Desactivado';
+    }
 
     // Relación: Cliente tiene muchas ventas
     public function ventas()

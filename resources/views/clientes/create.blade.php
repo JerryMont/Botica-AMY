@@ -111,6 +111,16 @@
             >{{ old('direccion') }}</textarea>
         </div>
 
+        <div style="margin-bottom: 20px;">
+            <label for="activo" style="display: block; margin-bottom: 5px; color: #2c3e50; font-weight: bold;">
+                Activo *
+            </label>
+            <select id="activo" name="activo" required>
+                <option value="1" selected>Sí</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+
         <div style="display: flex; gap: 15px;">
             <button type="submit" class="btn btn-success">
                 💾 Guardar Cliente

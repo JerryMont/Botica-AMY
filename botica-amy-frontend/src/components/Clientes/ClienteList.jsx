@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import { getClientes, deleteCliente } from '../../api/clientes';
 import api from '../../api/axios';
+import ClientModal from './ClientModal';
 import SearchFilter from '../UI/SearchFilter';
 import Pagination from '../UI/Pagination';
 import { getThemeColors } from '../../hooks/useDarkMode';
@@ -11,6 +12,7 @@ export default function ClienteList({ onEdit }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(8);
+  const [showForm, setShowForm] = useState(null);
   const colors = getThemeColors();
 
   const fetchClientes = () => {
@@ -105,20 +107,36 @@ export default function ClienteList({ onEdit }) {
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
         <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Clientes</h2>
-        <button
-          onClick={handleExport}
-          style={{
-            padding: '8px 16px',
-            backgroundColor: '#27ae60',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '14px'
-          }}
-        >
-          📊 Exportar CSV
-        </button>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button
+            onClick={() => setShowForm({ cliente: null })}
+            style={{
+              padding: '8px 16px',
+              backgroundColor: '#27ae60',
+              color: 'white',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px'
+            }}
+          >
+            + Nuevo Cliente
+          </button>
+          <button
+            onClick={handleExport}
+            style={{
+              padding: '8px 16px',
+              backgroundColor: '#3498db',
+              color: 'white',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px'
+            }}
+          >
+            📊 Exportar CSV
+          </button>
+        </div>
       </div>
 
       <SearchFilter
@@ -129,6 +147,8 @@ export default function ClienteList({ onEdit }) {
         filters={filters}
         onFilterChange={handleFilterChange}
       />
+      
+      {showForm !== null && <ClientModal cliente={showForm.cliente} onClose={() => setShowForm(null)} onSuccess={fetchClientes} />}
       
       {filteredClientes.length === 0 ? (
         <p style={{ textAlign: 'center', color: colors.textSecondary }}>
@@ -162,6 +182,41 @@ export default function ClienteList({ onEdit }) {
                     📍 {c.direccion}
                   </p>
                 )}
+                <p style={{ margin: '5px 0', color: colors.textSecondary, fontSize: '14px' }}>
+                  Estado: <strong style={{ color: c.activo ? '#27ae60' : '#e74c3c' }}>{c.activo ? 'Activo' : 'Inactivo'}</strong>
+                </p>
+                <div style={{ display: 'flex', gap: 8, marginTop: 12 }}>
+                  <button
+                    onClick={() => setShowForm({ cliente: c })}
+                    style={{
+                      padding: '6px 12px',
+                      backgroundColor: '#3498db',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontSize: '12px',
+                      flex: 1
+                    }}
+                  >
+                    ✏️ Editar
+                  </button>
+                  <button
+                    onClick={() => handleDelete(c.id_cliente)}
+                    style={{
+                      padding: '6px 12px',
+                      backgroundColor: '#e74c3c',
+                      color: 'white',
+                      border: 'none',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontSize: '12px',
+                      flex: 1
+                    }}
+                  >
+                    🗑️ Eliminar
+                  </button>
+                </div>
               </div>
             ))}
           </div>
