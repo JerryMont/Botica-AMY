@@ -1414,3 +1414,6 @@
 [2026-01-21 18:01:56] local.DEBUG: Token válido encontrado para usuario: admin  
 [2026-01-21 18:02:19] local.DEBUG: Token válido encontrado para usuario: admin  
 [2026-01-21 18:02:20] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-01-21 18:21:00] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"vendedor"} 
+[2026-01-21 18:21:07] local.DEBUG: Token válido encontrado para usuario: vendedor  
+[2026-01-21 18:21:07] local.DEBUG: Token válido encontrado para usuario: vendedor  
