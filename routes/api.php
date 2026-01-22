@@ -15,6 +15,7 @@ use App\Http\Controllers\Api\ReporteController;
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout']); // Logout sin requerir autenticación para evitar problemas
 
+// Route::middleware([\App\Http\Middleware\HandleSanctumToken::class, \App\Http\Middleware\AuthenticateUser::class])->group(function () {
 Route::middleware([\App\Http\Middleware\HandleSanctumToken::class, \App\Http\Middleware\AuthenticateUser::class])->group(function () {
     // Usuarios (solo admin)
     Route::apiResource('usuarios', UsuarioController::class)->middleware(\App\Http\Middleware\RolMiddleware::class . ':admin');

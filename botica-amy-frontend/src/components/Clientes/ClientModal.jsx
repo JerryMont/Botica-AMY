@@ -61,7 +61,13 @@ export default function ClientModal({ cliente = null, onClose, onSuccess }) {
       onSuccess && onSuccess();
       onClose && onClose();
     } catch (err) {
-      setError('Error al guardar. Revise los datos.');
+      if (err.response && err.response.data && err.response.data.errors) {
+        const errors = err.response.data.errors;
+        const errorMessages = Object.values(errors).flat();
+        setError(errorMessages.join('. '));
+      } else {
+        setError('Error al guardar. Revise los datos.');
+      }
       window.showToast('Error al guardar cliente', 'error');
     } finally {
       setLoading(false);

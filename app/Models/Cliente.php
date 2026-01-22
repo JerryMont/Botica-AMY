@@ -5,6 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @property int $id_cliente
+ * @property string $nombre
+ * @property string|null $email
+ * @property string|null $direccion
+ * @property string|null $telefono
+ * @property bool $activo
+ * @property \Carbon\Carbon|null $fecha_inactividad
+ */
 class Cliente extends Model
 {
     use HasFactory;
@@ -24,6 +33,7 @@ class Cliente extends Model
 
     protected $casts = [
         'fecha_inactividad' => 'datetime',
+        'activo' => 'boolean',
     ];
 
     // Accessor para el estado
