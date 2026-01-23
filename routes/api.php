@@ -33,7 +33,7 @@ Route::middleware([\App\Http\Middleware\HandleSanctumToken::class, \App\Http\Mid
     Route::apiResource('servicios', ServicioController::class);
 
     // Ventas
-    Route::apiResource('ventas', VentaController::class)->except(['update']);
+    Route::apiResource('ventas', VentaController::class);
 
     // Movimientos de stock
     Route::apiResource('movimientos-stock', MovimientoStockController::class)->except(['update']);

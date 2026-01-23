@@ -20,6 +20,10 @@ class DetalleVenta extends Model
         'precio_unitario',
     ];
 
+    protected $casts = [
+        'precio_unitario' => 'decimal:2',
+    ];
+
     // Relación: DetalleVenta pertenece a una venta
     public function venta()
     {

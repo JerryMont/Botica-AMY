@@ -27,9 +27,17 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     ]
   };
 
+  // Estado para filtro rápido de pendientes
+  const [showOnlyPendientes, setShowOnlyPendientes] = useState(false);
+
   // Filtrar ventas
   const filteredVentas = useMemo(() => {
     let filtered = ventas;
+
+    // Filtro rápido de pendientes
+    if (showOnlyPendientes) {
+      filtered = filtered.filter(v => (v.estado || 'completada') === 'pendiente');
+    }
 
     // Búsqueda por cliente o ID de venta
     if (searchTerm) {
@@ -40,7 +48,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     }
 
     return filtered;
-  }, [ventas, searchTerm]);
+  }, [ventas, searchTerm, showOnlyPendientes]);
 
   // Paginación
   const totalPages = Math.ceil(filteredVentas.length / itemsPerPage);
@@ -48,6 +56,9 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
+
+  // Contar ventas pendientes
+  const ventasPendientes = ventas.filter(v => (v.estado || 'completada') === 'pendiente').length;
 
   const handleFilterChange = (filterType, value) => {
     // Implementar filtros adicionales si es necesario
@@ -62,7 +73,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
         v.cliente?.nombre || 'N/A',
         v.total,
         new Date(v.fecha_venta).toLocaleDateString(),
-        v.estado
+        v.estado || 'completada'
       ])
     ].map(row => row.join(',')).join('\n');
 
@@ -77,14 +88,26 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     window.showToast('Ventas exportadas exitosamente', 'success');
   };
 
+  const handleChangeEstado = async (id, nuevoEstado) => {
+    if (window.confirm(`¿Cambiar estado de la venta a "${nuevoEstado}"?`)) {
+      try {
+        await api.put(`/ventas/${id}`, { estado: nuevoEstado });
+        setVentas(ventas.map(v => v.id_venta === id ? { ...v, estado: nuevoEstado } : v));
+        window.showToast(`Estado cambiado a ${nuevoEstado}`, 'success');
+      } catch (error) {
+        window.showToast('Error al cambiar estado', 'error');
+      }
+    }
+  };
+
   const handleDelete = async (id) => {
-    if (window.confirm('¿Estás seguro de eliminar esta venta? Esta acción restaurará el stock de los productos.')) {
+    if (window.confirm('¿Eliminar esta venta? Esta acción no se puede deshacer.')) {
       try {
         await api.delete(`/ventas/${id}`);
         setVentas(ventas.filter(v => v.id_venta !== id));
-        window.showToast('Venta eliminada y stock restaurado', 'success');
+        window.showToast('Venta eliminada exitosamente', 'success');
       } catch (error) {
-        window.showToast('Error al eliminar la venta', 'error');
+        window.showToast('Error al eliminar venta', 'error');
       }
     }
   };
@@ -105,8 +128,42 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
       boxShadow: `0 2px 4px ${colors.shadowColor}`
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-        <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Ventas</h2>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <h2 style={{ margin: 0, color: colors.textPrimary }}>Lista de Ventas</h2>
+          {ventasPendientes > 0 && (
+            <div style={{
+              backgroundColor: colors.warningColor,
+              color: colors.buttonTextColor,
+              padding: '4px 12px',
+              borderRadius: '20px',
+              fontSize: '14px',
+              fontWeight: 'bold',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '5px'
+            }}>
+              ⚠️ {ventasPendientes} pendiente{ventasPendientes !== 1 ? 's' : ''}
+            </div>
+          )}
+        </div>
         <div style={{ display: 'flex', gap: '10px' }}>
+          {ventasPendientes > 0 && (
+            <button
+              onClick={() => setShowOnlyPendientes(!showOnlyPendientes)}
+              style={{
+                padding: '8px 16px',
+                backgroundColor: showOnlyPendientes ? colors.warningColor : colors.accentColor,
+                color: colors.buttonTextColor,
+                border: 'none',
+                borderRadius: '4px',
+                cursor: 'pointer',
+                fontSize: '14px',
+                fontWeight: 'bold'
+              }}
+            >
+              {showOnlyPendientes ? '📋 Mostrar Todas' : `⚠️ Ver ${ventasPendientes} Pendiente${ventasPendientes !== 1 ? 's' : ''}`}
+            </button>
+          )}
           <button
             onClick={onNuevaVenta}
             style={{
@@ -166,17 +223,17 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                 backgroundColor: colors.cardBgAlt
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
-                  <h3 style={{ margin: 0, color: colors.textPrimary }}>Venta #{v.id_venta}</h3>
+                  <h3 style={{ margin: 0, color: colors.textPrimary }}>Factura #{v.id_venta}</h3>
                   <span style={{
                     padding: '4px 8px',
                     borderRadius: '4px',
                     fontSize: '12px',
                     fontWeight: 'bold',
-                    backgroundColor: v.estado === 'completada' ? colors.successColor : 
-                                   v.estado === 'pendiente' ? colors.warningColor : colors.errorColor,
+                    backgroundColor: (v.estado || 'completada') === 'completada' ? colors.successColor : 
+                                   (v.estado || 'completada') === 'pendiente' ? colors.warningColor : colors.errorColor,
                     color: colors.buttonTextColor
                   }}>
-                    {v.estado}
+                    {v.estado || 'completada'}
                   </span>
                 </div>
                 
@@ -209,6 +266,25 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
                     >
                       👁️ Ver Detalle
                     </button>
+                    <select
+                      value={v.estado || 'completada'}
+                      onChange={(e) => handleChangeEstado(v.id_venta, e.target.value)}
+                      style={{
+                        padding: '6px 8px',
+                        backgroundColor: (v.estado || 'completada') === 'completada' ? colors.successColor : 
+                                       (v.estado || 'completada') === 'pendiente' ? colors.warningColor : colors.errorColor,
+                        color: colors.buttonTextColor,
+                        border: 'none',
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        fontSize: '12px',
+                        fontWeight: 'bold'
+                      }}
+                    >
+                      <option value="completada">Completada</option>
+                      <option value="pendiente">Pendiente</option>
+                      <option value="cancelada">Cancelada</option>
+                    </select>
                     <button
                       onClick={() => handleDelete(v.id_venta)}
                       style={{

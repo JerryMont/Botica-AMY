@@ -31,11 +31,28 @@ export default function VentaForm({ onSuccess, onCancel }) {
       }
     }
 
+    // Calcular subtotal automáticamente
+    detalles[idx].subtotal = detalles[idx].cantidad * detalles[idx].precio_unitario;
+
     setForm({ ...form, detalles });
   };
 
+  const handleInputChange = (idx, field, inputValue) => {
+    let value = inputValue;
+
+    // Si el campo es precio_unitario o cantidad, y el valor actual es 0, reemplazar
+    if ((field === 'precio_unitario' || field === 'cantidad') && form.detalles[idx][field] === 0 && value !== '0') {
+      // Si el usuario escribe algo que no es 0, usar ese valor directamente
+      value = value.replace(/^0+/, ''); // Remover ceros iniciales
+      if (value === '') value = '0';
+    }
+
+    const numValue = value === '' ? 0 : Number(value);
+    handleProducto(idx, field, isNaN(numValue) ? 0 : numValue);
+  };
+
   const addDetalle = () => {
-    setForm({ ...form, detalles: [...form.detalles, { tempId: Date.now(), id_producto: '', cantidad: 1, precio_unitario: 0 }] });
+    setForm({ ...form, detalles: [...form.detalles, { tempId: Date.now(), id_producto: '', cantidad: 1, precio_unitario: 0, subtotal: 0 }] });
   };
 
   const removeDetalle = idx => {
@@ -97,12 +114,16 @@ export default function VentaForm({ onSuccess, onCancel }) {
               <option key={p.id_producto} value={p.id_producto}>{p.nombre_producto}</option>
             ))}
           </select>
-          <input type="number" min={1} value={d.cantidad} onChange={e => handleProducto(idx, 'cantidad', Number(e.target.value))} required style={{ width: 70, padding: 8, borderRadius: 6, border: '1px solid #ccc' }} placeholder="Cantidad" />
-          <input type="number" min={0} value={d.precio_unitario} onChange={e => handleProducto(idx, 'precio_unitario', Number(e.target.value))} required style={{ width: 100, padding: 8, borderRadius: 6, border: '1px solid #ccc' }} placeholder="Precio" />
+          <input type="number" min={1} step={1} value={d.cantidad === 0 ? '' : d.cantidad} onChange={e => handleInputChange(idx, 'cantidad', e.target.value)} required style={{ width: 70, padding: 8, borderRadius: 6, border: '1px solid #ccc' }} placeholder="Cantidad" />
+          <input type="number" min={0} step={0.1} value={d.precio_unitario === 0 ? '' : d.precio_unitario} onChange={e => handleInputChange(idx, 'precio_unitario', e.target.value)} onFocus={e => { if (e.target.value === '0') e.target.select(); }} required style={{ width: 100, padding: 8, borderRadius: 6, border: '1px solid #ccc' }} placeholder="Precio" />
+          <span style={{ width: 80, textAlign: 'right', fontWeight: 600, color: '#27ae60' }}>S/ {d.subtotal ? d.subtotal.toFixed(2) : '0.00'}</span>
           <button type="button" onClick={() => removeDetalle(idx)} style={{ background: '#e74c3c', color: 'white', border: 'none', borderRadius: 6, padding: '8px 14px', fontWeight: 600, cursor: 'pointer' }}>Quitar</button>
         </div>
       ))}
       <button type="button" onClick={addDetalle} style={{ background: '#3498db', color: 'white', border: 'none', borderRadius: 6, padding: '10px 20px', fontWeight: 600, fontSize: 15, cursor: 'pointer', marginBottom: 10, width: 'fit-content' }}>+ Agregar Producto</button>
+      <div style={{ textAlign: 'right', fontSize: 18, fontWeight: 700, color: '#2563eb', marginBottom: 20 }}>
+        Total: S/ {form.detalles.reduce((sum, d) => sum + (d.subtotal || 0), 0).toFixed(2)}
+      </div>
       <div style={{ display: 'flex', gap: 14, marginTop: 18 }}>
         <button
           type="submit"

@@ -15,9 +15,17 @@ class Venta extends Model
 
     protected $fillable = [
         'fecha',
+        'fecha_venta',
         'total',
         'cliente_id',
+        'id_cliente',
         'usuario_id',
+        'id_usuario',
+        'estado',
+    ];
+
+    protected $casts = [
+        'estado' => 'string',
     ];
 
     // Relación: Venta pertenece a un usuario
