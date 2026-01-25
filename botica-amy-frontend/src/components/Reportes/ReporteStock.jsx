@@ -4,6 +4,7 @@ import { getThemeColors } from '../../hooks/useDarkMode';
 
 export default function ReporteStock() {
   const [umbral, setUmbral] = useState(10);
+  const [umbralInput, setUmbralInput] = useState('10');
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(false);
   const colors = getThemeColors();
@@ -26,6 +27,11 @@ export default function ReporteStock() {
     fetchProductos();
   }, [fetchProductos]);
 
+  // Sincronizar umbralInput cuando cambie umbral
+  useEffect(() => {
+    setUmbralInput(umbral.toString());
+  }, [umbral]);
+
   return (
     <div>
       <div style={{
@@ -40,7 +46,17 @@ export default function ReporteStock() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12, alignItems: 'end' }}>
           <div>
             <label style={{ display: 'block', color: colors.textPrimary, marginBottom: 6 }}>Umbral de stock</label>
-            <input type="number" min={1} value={umbral} onChange={e => setUmbral(Number(e.target.value))} style={{ width: '100%', padding: 10, border: `1px solid ${colors.inputBorder}`, borderRadius: 6, backgroundColor: colors.inputBg, color: colors.textPrimary }} />
+            <input 
+              type="text" 
+              value={umbralInput} 
+              onChange={e => setUmbralInput(e.target.value)}
+              onBlur={() => {
+                const numValue = parseInt(umbralInput) || 0;
+                setUmbral(Math.max(0, numValue));
+              }}
+              placeholder="0"
+              style={{ width: '100%', padding: 10, border: `1px solid ${colors.inputBorder}`, borderRadius: 6, backgroundColor: colors.inputBg, color: colors.textPrimary }} 
+            />
           </div>
           <button onClick={fetchProductos} disabled={loading} style={{
             padding: '12px 18px',
@@ -83,8 +99,23 @@ export default function ReporteStock() {
                 </thead>
                 <tbody>
                   {productos.map((p) => {
-                    const estado = p.stock === 0 ? 'Sin stock' : p.stock <= 5 ? 'Crítico' : 'Bajo';
-                    const color = p.stock === 0 ? '#e74c3c' : p.stock <= 5 ? '#e67e22' : '#f39c12';
+                    let estado, color;
+                    if (p.stock === 0) {
+                      estado = 'Sin stock';
+                      color = '#e74c3c'; // Rojo
+                    } else if (p.stock <= 5) {
+                      estado = 'Crítico';
+                      color = '#e67e22'; // Naranja
+                    } else if (p.stock <= 20) {
+                      estado = 'Bajo';
+                      color = '#f39c12'; // Amarillo
+                    } else if (p.stock <= 50) {
+                      estado = 'Medio';
+                      color = '#27ae60'; // Verde
+                    } else {
+                      estado = 'Alto';
+                      color = '#2ecc71'; // Verde claro
+                    }
                     return (
                       <tr key={p.id_producto} style={{ borderBottom: `1px solid ${colors.borderColor}` }}>
                         <td style={{ padding: 12, color: colors.textPrimary }}>{p.nombre_producto}</td>
