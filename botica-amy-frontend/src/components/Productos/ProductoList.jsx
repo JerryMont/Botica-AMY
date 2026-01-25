@@ -3,7 +3,7 @@ import api from '../../api/axios';
 import ProductModal from './ProductModal';
 import SearchFilter from '../UI/SearchFilter';
 import Pagination from '../UI/Pagination';
-import { exportToPDF, exportToCSV, exportConfigs } from '../UI/ExportUtils';
+import { exportToCSV, exportConfigs } from '../UI/ExportUtils';
 import '../../../src/pages/Productos.css';
 
 export default function ProductoList() {
@@ -72,16 +72,11 @@ export default function ProductoList() {
     }
   };
 
-  const handleExport = (format = 'csv') => {
+  const handleExport = () => {
     const config = exportConfigs.productos;
     try {
-      if (format === 'pdf') {
-        exportToPDF(filteredProductos, config.title, config.columns, 'productos');
-        window.showToast('Productos exportados a PDF exitosamente', 'success');
-      } else {
-        exportToCSV(filteredProductos, config.columns, 'productos');
-        window.showToast('Productos exportados a CSV exitosamente', 'success');
-      }
+      exportToCSV(filteredProductos, config.columns, 'productos');
+      window.showToast('Productos exportados a CSV exitosamente', 'success');
     } catch (error) {
       console.error('Error en exportación:', error);
       window.showToast(error.message || 'Error al exportar datos', 'error');
@@ -112,12 +107,6 @@ export default function ProductoList() {
             className="productos-btn productos-btn-success"
           >
             📊 CSV
-          </button>
-          <button
-            onClick={() => handleExport('pdf')}
-            className="productos-btn productos-btn-danger"
-          >
-            📄 PDF
           </button>
         </div>
       </div>
@@ -168,7 +157,7 @@ export default function ProductoList() {
                         await api.delete(`/productos/${p.id_producto}`);
                         window.showToast('Producto eliminado', 'success');
                         fetchProductos();
-                      } catch (err) {
+                      } catch {
                         window.showToast('Error al eliminar producto', 'error');
                       }
                     }}
