@@ -13,6 +13,7 @@ export default function ProductoList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
   const [showForm, setShowForm] = useState(null);
+  const [stockFilter, setStockFilter] = useState('all');
 
   const fetchProductos = () => {
     setLoading(true);
@@ -27,6 +28,7 @@ export default function ProductoList() {
 
   const filters = {
     stock: [
+      { value: 'all', label: 'Todos' },
       { value: 'bajo', label: 'Stock Bajo (≤10)' },
       { value: 'medio', label: 'Stock Medio (11-50)' },
       { value: 'alto', label: 'Stock Alto (>50)' }
@@ -35,13 +37,27 @@ export default function ProductoList() {
 
   const filteredProductos = useMemo(() => {
     let filtered = productos;
+
+    // Filtro por búsqueda
     if (searchTerm) {
       filtered = filtered.filter(p =>
         p.nombre_producto.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
+
+    // Filtro por stock
+    if (stockFilter !== 'all') {
+      filtered = filtered.filter(p => {
+        const stock = p.stock;
+        if (stockFilter === 'bajo') return stock <= 10;
+        if (stockFilter === 'medio') return stock >= 11 && stock <= 50;
+        if (stockFilter === 'alto') return stock > 50;
+        return true;
+      });
+    }
+
     return filtered;
-  }, [productos, searchTerm]);
+  }, [productos, searchTerm, stockFilter]);
 
   const totalPages = Math.ceil(filteredProductos.length / itemsPerPage);
   const paginatedProductos = filteredProductos.slice(
@@ -50,7 +66,10 @@ export default function ProductoList() {
   );
 
   const handleFilterChange = (filterType, value) => {
-    console.log('Filter changed:', filterType, value);
+    if (filterType === 'stock') {
+      setStockFilter(value);
+      setCurrentPage(1); // Resetear a primera página cuando se filtra
+    }
   };
 
   const handleExport = (format = 'csv') => {

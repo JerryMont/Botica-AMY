@@ -48,7 +48,6 @@ export default function SearchFilter({
                 minWidth: '120px'
               }}
             >
-              <option value="">{key}</option>
               {options.map(option => (
                 <option key={option.value} value={option.value}>
                   {option.label}

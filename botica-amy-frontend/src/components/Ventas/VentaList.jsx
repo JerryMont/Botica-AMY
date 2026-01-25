@@ -10,6 +10,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
+  const [estadoFilter, setEstadoFilter] = useState('all');
   const colors = getThemeColors();
 
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
   // Filtros disponibles
   const filters = {
     estado: [
+      { value: 'all', label: 'Todos' },
       { value: 'completada', label: 'Completada' },
       { value: 'pendiente', label: 'Pendiente' },
       { value: 'cancelada', label: 'Cancelada' }
@@ -28,15 +30,15 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
   };
 
   // Estado para filtro rápido de pendientes
-  const [showOnlyPendientes, setShowOnlyPendientes] = useState(false);
+  // const [showOnlyPendientes, setShowOnlyPendientes] = useState(false);
 
   // Filtrar ventas
   const filteredVentas = useMemo(() => {
     let filtered = ventas;
 
-    // Filtro rápido de pendientes
-    if (showOnlyPendientes) {
-      filtered = filtered.filter(v => (v.estado || 'completada') === 'pendiente');
+    // Filtro por estado
+    if (estadoFilter !== 'all') {
+      filtered = filtered.filter(v => (v.estado || 'completada') === estadoFilter);
     }
 
     // Búsqueda por cliente o ID de venta
@@ -48,7 +50,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     }
 
     return filtered;
-  }, [ventas, searchTerm, showOnlyPendientes]);
+  }, [ventas, searchTerm, estadoFilter]);
 
   // Paginación
   const totalPages = Math.ceil(filteredVentas.length / itemsPerPage);
@@ -61,8 +63,10 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
   const ventasPendientes = ventas.filter(v => (v.estado || 'completada') === 'pendiente').length;
 
   const handleFilterChange = (filterType, value) => {
-    // Implementar filtros adicionales si es necesario
-    console.log('Filter changed:', filterType, value);
+    if (filterType === 'estado') {
+      setEstadoFilter(value);
+      setCurrentPage(1); // Resetear paginación al cambiar filtro
+    }
   };
 
   const handleExport = () => {

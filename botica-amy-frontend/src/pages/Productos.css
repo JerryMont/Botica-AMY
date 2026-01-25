@@ -380,3 +380,55 @@ html.dark-mode .productos-pagination button.active {
   background-color: #60a5fa;
   border-color: #60a5fa;
 }
+
+/* ============================================================================
+   ESTILOS PARA STOCK - INDICADORES VISUALES
+   ========================================================================== */
+
+.productos-stock {
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Stock Bajo - Rojo */
+.productos-stock.low {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+html.dark-mode .productos-stock.low {
+  background-color: #451a1a;
+  color: #fca5a5;
+  border-color: #7f1d1d;
+}
+
+/* Stock Medio - Naranja */
+.productos-stock.medium {
+  background-color: #fff7ed;
+  color: #ea580c;
+  border: 1px solid #fed7aa;
+}
+
+html.dark-mode .productos-stock.medium {
+  background-color: #451a0a;
+  color: #fdba74;
+  border-color: #9a3412;
+}
+
+/* Stock Alto - Verde */
+.productos-stock.high {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+html.dark-mode .productos-stock.high {
+  background-color: #14532d;
+  color: #86efac;
+  border-color: #166534;
+}

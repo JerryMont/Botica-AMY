@@ -13,6 +13,7 @@ export default function ClienteList({ onEdit }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(8);
   const [showForm, setShowForm] = useState(null);
+  const [estadoFilter, setEstadoFilter] = useState('all');
   const colors = getThemeColors();
 
   const fetchClientes = () => {
@@ -28,6 +29,7 @@ export default function ClienteList({ onEdit }) {
   // Filtros disponibles
   const filters = {
     estado: [
+      { value: 'all', label: 'Todos' },
       { value: 'activo', label: 'Activo' },
       { value: 'inactivo', label: 'Inactivo' }
     ]
@@ -45,8 +47,13 @@ export default function ClienteList({ onEdit }) {
       );
     }
 
+    // Filtro por estado
+    if (estadoFilter !== 'all') {
+      filtered = filtered.filter(c => c.activo === (estadoFilter === 'activo'));
+    }
+
     return filtered;
-  }, [clientes, searchTerm]);
+  }, [clientes, searchTerm, estadoFilter]);
 
   // Paginación
   const totalPages = Math.ceil(filteredClientes.length / itemsPerPage);
@@ -56,8 +63,10 @@ export default function ClienteList({ onEdit }) {
   );
 
   const handleFilterChange = (filterType, value) => {
-    // Implementar filtros adicionales si es necesario
-    console.log('Filter changed:', filterType, value);
+    if (filterType === 'estado') {
+      setEstadoFilter(value);
+      setCurrentPage(1); // Resetear a primera página cuando se filtra
+    }
   };
 
   const handleExport = () => {
