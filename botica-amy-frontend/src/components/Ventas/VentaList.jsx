@@ -29,9 +29,6 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
     ]
   };
 
-  // Estado para filtro rápido de pendientes
-  // const [showOnlyPendientes, setShowOnlyPendientes] = useState(false);
-
   // Filtrar ventas
   const filteredVentas = useMemo(() => {
     let filtered = ventas;
@@ -98,7 +95,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
         await api.put(`/ventas/${id}`, { estado: nuevoEstado });
         setVentas(ventas.map(v => v.id_venta === id ? { ...v, estado: nuevoEstado } : v));
         window.showToast(`Estado cambiado a ${nuevoEstado}`, 'success');
-      } catch (error) {
+      } catch {
         window.showToast('Error al cambiar estado', 'error');
       }
     }
@@ -110,7 +107,7 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
         await api.delete(`/ventas/${id}`);
         setVentas(ventas.filter(v => v.id_venta !== id));
         window.showToast('Venta eliminada exitosamente', 'success');
-      } catch (error) {
+      } catch {
         window.showToast('Error al eliminar venta', 'error');
       }
     }
@@ -151,23 +148,6 @@ export default function VentaList({ onViewDetail, onNuevaVenta }) {
           )}
         </div>
         <div style={{ display: 'flex', gap: '10px' }}>
-          {ventasPendientes > 0 && (
-            <button
-              onClick={() => setShowOnlyPendientes(!showOnlyPendientes)}
-              style={{
-                padding: '8px 16px',
-                backgroundColor: showOnlyPendientes ? colors.warningColor : colors.accentColor,
-                color: colors.buttonTextColor,
-                border: 'none',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '14px',
-                fontWeight: 'bold'
-              }}
-            >
-              {showOnlyPendientes ? '📋 Mostrar Todas' : `⚠️ Ver ${ventasPendientes} Pendiente${ventasPendientes !== 1 ? 's' : ''}`}
-            </button>
-          )}
           <button
             onClick={onNuevaVenta}
             style={{

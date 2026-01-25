@@ -32,7 +32,7 @@ class VentaController extends Controller
         try {
             // Validar stock suficiente antes de crear la venta
             foreach ($data['detalles'] as $detalle) {
-                $producto = \App\Models\Producto::find($detalle['id_producto']);
+                $producto = Producto::find($detalle['id_producto']);
                 if (!$producto) {
                     DB::rollBack();
                     return response()->json([
@@ -62,7 +62,7 @@ class VentaController extends Controller
             
             // Crear detalles y actualizar stock
             foreach ($data['detalles'] as $detalle) {
-                $producto = \App\Models\Producto::find($detalle['id_producto']);
+                $producto = Producto::find($detalle['id_producto']);
                 
                 // Crear detalle de venta
                 DetalleVenta::create([
@@ -77,7 +77,7 @@ class VentaController extends Controller
                 $producto->save();
                 
                 // Registrar movimiento de stock
-                \App\Models\MovimientoStock::create([
+                MovimientoStock::create([
                     'id_producto' => $detalle['id_producto'],
                     'tipo' => 'salida',
                     'cantidad' => $detalle['cantidad'],
@@ -150,7 +150,7 @@ class VentaController extends Controller
                         $producto->save();
 
                         // Registrar movimiento de devolución
-                        \App\Models\MovimientoStock::create([
+                        MovimientoStock::create([
                             'id_producto' => $detalle->id_producto,
                             'tipo' => 'entrada',
                             'cantidad' => $detalle->cantidad,
@@ -169,7 +169,7 @@ class VentaController extends Controller
                         $producto->save();
 
                         // Registrar movimiento de salida
-                        \App\Models\MovimientoStock::create([
+                        MovimientoStock::create([
                             'id_producto' => $detalle->id_producto,
                             'tipo' => 'salida',
                             'cantidad' => $detalle->cantidad,
@@ -215,13 +215,13 @@ class VentaController extends Controller
 
             // Restaurar stock
             foreach ($venta->detalles as $detalle) {
-                $producto = \App\Models\Producto::find($detalle->id_producto);
+                $producto = Producto::find($detalle->id_producto);
                 if ($producto) {
                     $producto->stock += $detalle->cantidad;
                     $producto->save();
 
                     // Registrar movimiento de devolución
-                    \App\Models\MovimientoStock::create([
+                    MovimientoStock::create([
                         'id_producto' => $detalle->id_producto,
                         'tipo' => 'entrada',
                         'cantidad' => $detalle->cantidad,
