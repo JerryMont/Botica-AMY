@@ -157,8 +157,9 @@ export default function ProductoList() {
                         await api.delete(`/productos/${p.id_producto}`);
                         window.showToast('Producto eliminado', 'success');
                         fetchProductos();
-                      } catch {
-                        window.showToast('Error al eliminar producto', 'error');
+                      } catch (err) {
+                        const msg = err?.response?.data?.message || 'Error al eliminar producto';
+                        window.showToast(msg, 'error');
                       }
                     }}
                     className="productos-btn productos-btn-danger"

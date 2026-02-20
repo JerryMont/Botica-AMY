@@ -142,12 +142,40 @@ class ProductoController extends Controller
                 'data' => null
             ], 404);
         }
-        $producto->delete();
-        return response()->json([
-            'status' => true,
-            'message' => 'Producto eliminado correctamente',
-            'data' => null
-        ]);
+
+        // Verificar si el producto tiene ventas asociadas (no se puede eliminar)
+        $tieneVentas = $producto->detalleVentas()->exists();
+        if ($tieneVentas) {
+            return response()->json([
+                'status' => false,
+                'message' => 'No se puede eliminar el producto porque tiene ventas registradas asociadas.',
+                'data' => null
+            ], 422);
+        }
+
+        DB::beginTransaction();
+        try {
+            // Eliminar primero los movimientos de stock relacionados
+            $producto->movimientosStock()->delete();
+
+            // Ahora sí eliminar el producto
+            $producto->delete();
+
+            DB::commit();
+
+            return response()->json([
+                'status' => true,
+                'message' => 'Producto eliminado correctamente',
+                'data' => null
+            ]);
+        } catch (\Throwable $e) {
+            DB::rollBack();
+            return response()->json([
+                'status' => false,
+                'message' => 'Error al eliminar el producto: ' . $e->getMessage(),
+                'data' => null
+            ], 500);
+        }
     }
 
     /**

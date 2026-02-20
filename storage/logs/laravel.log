@@ -2959,3 +2959,754 @@
 [2026-01-25 20:05:18] local.DEBUG: Token válido encontrado para usuario: admin  
 [2026-01-25 20:11:57] local.DEBUG: Token válido encontrado para usuario: admin  
 [2026-01-25 20:11:57] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:26:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:43] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:43] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:37:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:30] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:30] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:30] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:31] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:32] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 13:38:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:20] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-06 14:29:21] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:21] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:22] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:22] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:22] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:22] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:22] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-06 14:29:22] local.DEBUG: Token no encontrado o tokenable no disponible  
+[2026-02-19 22:52:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 22:52:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 23:22:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 23:22:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 23:29:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-19 23:29:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:07] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2026-02-20 17:46:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:17] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:46:18] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:47:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:47:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:48:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:24] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:24] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:27] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:29] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:39] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:39] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:49:41] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:50:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:50:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:50:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:50:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:50:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:50:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:03] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:08] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:08] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:47] local.INFO: Datos recibidos en VentaController@store {"cliente_id":"7","detalles":[{"id_producto":"5","cantidad":3,"precio_unitario":1.2,"subtotal":3.5999999999999996},{"id_producto":"1","cantidad":4,"precio_unitario":15.5,"subtotal":62}],"usuario_id":1,"fecha":"2026-02-20 12:51:46","total":65.6} 
+[2026-02-20 17:51:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:51:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:04] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:15] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:15] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:21] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:21] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:26] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:27] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 17:52:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:39] local.ERROR: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (Connection: mysql, SQL: select * from `usuarios` where `nombre_usuario` = admin limit 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 2002): SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión (Connection: mysql, SQL: select * from `usuarios` where `nombre_usuario` = admin limit 1) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(398): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3106): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3091): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3676): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3090): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(811): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(793): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(343): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\AuthController.php(21): Illuminate\\Database\\Eloquent\\Builder->first()
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\AuthController->login(Object(Illuminate\\Http\\Request))
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('login', Array)
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\AuthController), 'login')
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#46 {main}
+
+[previous exception] [object] (PDOException(code: 2002): SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:66)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(66): PDO->__construct('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(44): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'root', Object(SensitiveParameterValue), Array)
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(185): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1231): call_user_func(Object(Closure))
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1267): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(512): Illuminate\\Database\\Connection->getReadPdo()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(407): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(398): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3106): Illuminate\\Database\\Connection->select('select * from `...', Array, true)
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3091): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3676): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(3090): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(811): Illuminate\\Database\\Query\\Builder->get(Array)
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(793): Illuminate\\Database\\Eloquent\\Builder->getModels(Array)
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(343): Illuminate\\Database\\Eloquent\\Builder->get(Array)
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\AuthController.php(21): Illuminate\\Database\\Eloquent\\Builder->first()
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\AuthController->login(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('login', Array)
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\AuthController), 'login')
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2026-02-20 21:50:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 21:50:52] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:37] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:07:38] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:08] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:15] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:34] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:55] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:09:56] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:01] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:02] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:07] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:07] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:07] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:09] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:11] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:11] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:48] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:57] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:10:57] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) (Connection: mysql, SQL: delete from `productos` where `id_producto` = 5) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) (Connection: mysql, SQL: delete from `productos` where `id_producto` = 5) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('delete from `pr...', Array, Object(Closure))
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(584): Illuminate\\Database\\Connection->run('delete from `pr...', Array, Object(Closure))
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(548): Illuminate\\Database\\Connection->affectingStatement('delete from `pr...', Array)
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(4024): Illuminate\\Database\\Connection->delete('delete from `pr...', Array)
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1387): Illuminate\\Database\\Query\\Builder->delete()
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1501): Illuminate\\Database\\Eloquent\\Builder->delete()
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1433): Illuminate\\Database\\Eloquent\\Model->performDeleteOnModel()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\ProductoController.php(145): Illuminate\\Database\\Eloquent\\Model->delete()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\ProductoController->destroy('5')
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\ProductoController), 'destroy')
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\AuthenticateUser.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\AuthenticateUser->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\HandleSanctumToken.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\HandleSanctumToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:596)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(596): PDOStatement->execute()
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('delete from `pr...', Array)
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('delete from `pr...', Array, Object(Closure))
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(584): Illuminate\\Database\\Connection->run('delete from `pr...', Array, Object(Closure))
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(548): Illuminate\\Database\\Connection->affectingStatement('delete from `pr...', Array)
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(4024): Illuminate\\Database\\Connection->delete('delete from `pr...', Array)
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1387): Illuminate\\Database\\Query\\Builder->delete()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1501): Illuminate\\Database\\Eloquent\\Builder->delete()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1433): Illuminate\\Database\\Eloquent\\Model->performDeleteOnModel()
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\ProductoController.php(145): Illuminate\\Database\\Eloquent\\Model->delete()
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\ProductoController->destroy('5')
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\ProductoController), 'destroy')
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\AuthenticateUser.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\AuthenticateUser->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\HandleSanctumToken.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\HandleSanctumToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#50 {main}
+"} 
+[2026-02-20 22:11:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:11:01] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) (Connection: mysql, SQL: delete from `productos` where `id_producto` = 5) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) (Connection: mysql, SQL: delete from `productos` where `id_producto` = 5) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('delete from `pr...', Array, Object(Closure))
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(584): Illuminate\\Database\\Connection->run('delete from `pr...', Array, Object(Closure))
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(548): Illuminate\\Database\\Connection->affectingStatement('delete from `pr...', Array)
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(4024): Illuminate\\Database\\Connection->delete('delete from `pr...', Array)
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1387): Illuminate\\Database\\Query\\Builder->delete()
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1501): Illuminate\\Database\\Eloquent\\Builder->delete()
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1433): Illuminate\\Database\\Eloquent\\Model->performDeleteOnModel()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\ProductoController.php(145): Illuminate\\Database\\Eloquent\\Model->delete()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\ProductoController->destroy('5')
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\ProductoController), 'destroy')
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\AuthenticateUser.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\AuthenticateUser->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\HandleSanctumToken.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\HandleSanctumToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:596)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(596): PDOStatement->execute()
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('delete from `pr...', Array)
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('delete from `pr...', Array, Object(Closure))
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(584): Illuminate\\Database\\Connection->run('delete from `pr...', Array, Object(Closure))
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(548): Illuminate\\Database\\Connection->affectingStatement('delete from `pr...', Array)
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(4024): Illuminate\\Database\\Connection->delete('delete from `pr...', Array)
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1387): Illuminate\\Database\\Query\\Builder->delete()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1501): Illuminate\\Database\\Eloquent\\Builder->delete()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1433): Illuminate\\Database\\Eloquent\\Model->performDeleteOnModel()
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\ProductoController.php(145): Illuminate\\Database\\Eloquent\\Model->delete()
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\ProductoController->destroy('5')
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\ProductoController), 'destroy')
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\AuthenticateUser.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\AuthenticateUser->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\HandleSanctumToken.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\HandleSanctumToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#50 {main}
+"} 
+[2026-02-20 22:11:12] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:11:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:11:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:11:19] local.ERROR: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) (Connection: mysql, SQL: delete from `productos` where `id_producto` = 5) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) (Connection: mysql, SQL: delete from `productos` where `id_producto` = 5) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:825)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('delete from `pr...', Array, Object(Closure))
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(584): Illuminate\\Database\\Connection->run('delete from `pr...', Array, Object(Closure))
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(548): Illuminate\\Database\\Connection->affectingStatement('delete from `pr...', Array)
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(4024): Illuminate\\Database\\Connection->delete('delete from `pr...', Array)
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1387): Illuminate\\Database\\Query\\Builder->delete()
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1501): Illuminate\\Database\\Eloquent\\Builder->delete()
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1433): Illuminate\\Database\\Eloquent\\Model->performDeleteOnModel()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\ProductoController.php(145): Illuminate\\Database\\Eloquent\\Model->delete()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\ProductoController->destroy('5')
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\ProductoController), 'destroy')
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\AuthenticateUser.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\AuthenticateUser->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\HandleSanctumToken.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\HandleSanctumToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#48 {main}
+
+[previous exception] [object] (PDOException(code: 23000): SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`botica_amy`.`detalle_ventas`, CONSTRAINT `detalle_ventas_id_producto_foreign` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`)) at D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:596)
+[stacktrace]
+#0 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(596): PDOStatement->execute()
+#1 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(812): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('delete from `pr...', Array)
+#2 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(779): Illuminate\\Database\\Connection->runQueryCallback('delete from `pr...', Array, Object(Closure))
+#3 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(584): Illuminate\\Database\\Connection->run('delete from `pr...', Array, Object(Closure))
+#4 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(548): Illuminate\\Database\\Connection->affectingStatement('delete from `pr...', Array)
+#5 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(4024): Illuminate\\Database\\Connection->delete('delete from `pr...', Array)
+#6 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php(1387): Illuminate\\Database\\Query\\Builder->delete()
+#7 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1501): Illuminate\\Database\\Eloquent\\Builder->delete()
+#8 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php(1433): Illuminate\\Database\\Eloquent\\Model->performDeleteOnModel()
+#9 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Controllers\\Api\\ProductoController.php(145): Illuminate\\Database\\Eloquent\\Model->delete()
+#10 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Api\\ProductoController->destroy('5')
+#11 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(44): Illuminate\\Routing\\Controller->callAction('destroy', Array)
+#12 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(266): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Api\\ProductoController), 'destroy')
+#13 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\Route->runController()
+#14 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(808): Illuminate\\Routing\\Route->run()
+#15 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\AuthenticateUser.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\AuthenticateUser->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#18 D:\\Xampp\\htdocs\\Botica-AMY\\app\\Http\\Middleware\\HandleSanctumToken.php(35): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): App\\Http\\Middleware\\HandleSanctumToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(51): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(807): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#24 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(786): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#25 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(750): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#26 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(739): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#27 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(201): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#28 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(170): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#32 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php(51): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php(110): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php(62): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\HandleCors->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php(58): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Http\\Middleware\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks.php(22): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(209): Illuminate\\Foundation\\Http\\Middleware\\InvokeDeferredCallbacks->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(127): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#47 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(145): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#48 D:\\Xampp\\htdocs\\Botica-AMY\\public\\index.php(14): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#49 D:\\Xampp\\htdocs\\Botica-AMY\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(23): require_once('D:\\\\Xampp\\\\htdocs...')
+#50 {main}
+"} 
+[2026-02-20 22:16:42] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:16:43] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:16:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:17:11] local.WARNING: Login fallido: usuario no encontrado {"nombre_usuario":"adminadminAdmin"} 
+[2026-02-20 22:17:42] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2026-02-20 22:18:01] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"admin"} 
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:44] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:45] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:19:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:20:21] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:20:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:20:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:20:31] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:20:49] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:21:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:21:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:23:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:23:05] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:23:19] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:23:21] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:23:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:23:23] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:24:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:24:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:24:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:24:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:24:33] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:24:59] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:25:00] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:25:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:25:28] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:14] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:15] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:21] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:32] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:32] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:26:36] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:20] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:21] local.INFO: Datos recibidos en VentaController@store {"cliente_id":"4","detalles":[{"id_producto":"7","cantidad":5,"precio_unitario":2.1,"subtotal":10.5},{"id_producto":"2","cantidad":8,"precio_unitario":1.5,"subtotal":12}],"usuario_id":1,"fecha":"2026-02-20 17:27:11","total":22.5} 
+[2026-02-20 22:27:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:22] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:25] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:40] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:27:51] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:28:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:28:10] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:29:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:29:06] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:29:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:29:13] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:29:46] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:29:47] local.DEBUG: Token válido encontrado para usuario: admin  
+[2026-02-20 22:30:04] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:04] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:05] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:05] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:05] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:05] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:05] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:05] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:30:19] local.WARNING: Login fallido: contraseña incorrecta {"nombre_usuario":"vendedor"} 
+[2026-02-20 22:30:25] local.DEBUG: Token válido encontrado para usuario: vendedor  
+[2026-02-20 22:30:25] local.DEBUG: Token válido encontrado para usuario: vendedor  
+[2026-02-20 22:31:06] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:06] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:06] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:06] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:06] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:07] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:07] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:31:07] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:32:21] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
+[2026-02-20 22:32:21] local.DEBUG: Token válido encontrado para usuario: katherin.jara  
